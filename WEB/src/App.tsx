@@ -10,7 +10,7 @@ import Sobre from "./components/sobre/Sobre";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <BrowserRouter>
         <Menu />
         <main className="appBody">
