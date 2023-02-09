@@ -55,7 +55,7 @@
   -o-transition: 0.5s;
 }
 
-.navlink:hover .navlink--img {
+.navlink .ativo .navlink--img {
   transform: translateX(35px);
   -webkit-transform: translateX(35px);
   -moz-transform: translateX(35px);
