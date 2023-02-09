@@ -5,6 +5,9 @@ import { House, Book, Phone, Code, User } from "phosphor-react";
 
 const Menu = () => {
   const [ativo, setAtivo] = React.useState(false);
+  const [indicator, setIndicator] = React.useState(true)
+
+  
 
   const handleClick = () => {
     setAtivo(!ativo)
@@ -15,7 +18,7 @@ const Menu = () => {
         <nav className="menu">
           <NavLink to="/" end className="navlink" onClick={handleClick}>
             <House size={26} color="black" className={`${ativo ? 'ativo' : '' } navlink--img`} />
-            <span>Home</span>
+            <span className={`${ativo ? 'ativo' : '' }`}>Home</span>
           </NavLink>
 
           <NavLink to="/port" className="navlink" onClick={handleClick}>
@@ -37,6 +40,7 @@ const Menu = () => {
             <User size={26} color="black" className="navlink--img" />
             <span>Sobre</span>
           </NavLink>
+          {indicator && <div className="indicator"></div>}
         </nav>
       </div>
     </div>

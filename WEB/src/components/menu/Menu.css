@@ -55,7 +55,7 @@
   -o-transition: 0.5s;
 }
 
-.navlink .ativo .navlink--img {
+.navlink .ativo.navlink--img {
   transform: translateX(35px);
   -webkit-transform: translateX(35px);
   -moz-transform: translateX(35px);
@@ -79,11 +79,25 @@
   -o-transform: translateX(20px);
 }
 
-.navlink:hover span {
+.navlink span.ativo {
   opacity: 1;
   transform: translateX(-5px);
   -webkit-transform: translateX(-5px);
   -moz-transform: translateX(-5px);
   -ms-transform: translateX(-5px);
   -o-transform: translateX(-5px);
+}
+
+.indicator{
+  position: absolute;
+  right: 50%;
+  width: 70px;
+  height: 70px;
+  background: #29fd53;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  
 }
