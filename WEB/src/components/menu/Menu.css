@@ -12,7 +12,7 @@
 }
 
 .menu--background {
-  height: 350px;
+  height: 385px;
   width: 75px;
   display: flex;
   align-items: center;
@@ -27,6 +27,7 @@
 }
 
 .menu {
+  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -53,14 +54,15 @@
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+  z-index: 3;
 }
 
 .navlink .ativo.navlink--img {
-  transform: translateX(35px);
-  -webkit-transform: translateX(35px);
-  -moz-transform: translateX(35px);
-  -ms-transform: translateX(35px);
-  -o-transform: translateX(35px);
+  transform: translateX(45px);
+  -webkit-transform: translateX(45px);
+  -moz-transform: translateX(45px);
+  -ms-transform: translateX(45px);
+  -o-transform: translateX(45px);
 }
 
 .navlink span {
@@ -73,7 +75,7 @@
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-  -webkit-transform: translateX(-40px);
+  -webkit-transform: translateX(20px);
   -moz-transform: translateX(20px);
   -ms-transform: translateX(20px);
   -o-transform: translateX(20px);
@@ -81,16 +83,17 @@
 
 .navlink span.ativo {
   opacity: 1;
-  transform: translateX(-5px);
-  -webkit-transform: translateX(-5px);
-  -moz-transform: translateX(-5px);
-  -ms-transform: translateX(-5px);
-  -o-transform: translateX(-5px);
+  transform: translateX(-10px);
+  -webkit-transform: translateX(-10px);
+  -moz-transform: translateX(-10px);
+  -ms-transform: translateX(-10px);
+  -o-transform: translateX(-10px);
 }
 
 .indicator{
   position: absolute;
-  right: 50%;
+  top: -5%;
+  left: 75%;
   width: 70px;
   height: 70px;
   background: #29fd53;
@@ -99,5 +102,17 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  
+  border: 8px solid #0d0d0d;
 }
+.indicator::before{
+  content: '';
+  position:absolute;
+  top: -30%;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-bottom-right-radius: 40px;
+  box-shadow: 2px 5px 0 0 #0d0d0d;
+}
+.indicator::after{}
