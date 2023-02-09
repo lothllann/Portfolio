@@ -1,7 +1,10 @@
 import React from 'react'
+import Head from '../helper/Head'
 
 export const Home = () => {
   return (
-    <div>Home</div>
+    <section>
+    <Head title='Home' description='Home do meu portfólio pessoal' />
+  </section>
   )
 }
