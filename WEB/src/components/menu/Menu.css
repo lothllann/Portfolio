@@ -70,15 +70,15 @@
   margin-top: 4px;
   transition: 0.5s;
   opacity: 0;
-  transform: translateX(20px);
+  transform: translateX(-20px);
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-  -webkit-transform: translateX(20px);
-  -moz-transform: translateX(20px);
-  -ms-transform: translateX(20px);
-  -o-transform: translateX(20px);
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  -o-transform: translateX(-20px);
 }
 
 .navlink span.ativo {
@@ -125,4 +125,20 @@
   background: transparent;
   border-top-right-radius: 20px;
   box-shadow: 10px 0 0 0 #0d0d0d;
+}
+
+.navlink:nth-child(1).ativo ~ .indicator{
+  transform: translateY(calc(70px * 0));
+  -webkit-transform: translateY(calc(70px * 0));
+  -moz-transform: translateY(calc(70px * 0));
+  -ms-transform: translateY(calc(70px * 0));
+  -o-transform: translateY(calc(70px * 0));
+}
+
+.navlink:nth-child(2).ativo ~ .indicator{
+  transform: translateY(calc(70px * 0));
+  -webkit-transform: translateY(calc(70px * 0));
+  -moz-transform: translateY(calc(70px * 0));
+  -ms-transform: translateY(calc(70px * 0));
+  -o-transform: translateY(calc(70px * 0));
 }
