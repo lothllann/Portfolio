@@ -13,11 +13,6 @@ const Menu = () => {
   }
   navs.forEach((x) => x.addEventListener("click", activeNavLink));
 
-  function activeSpan(this: any) {
-    spans.forEach((span) => span.classList.remove("ativo"));
-    this.classList.add("ativo");
-  }
-  spans.forEach((x) => x.addEventListener("click", activeSpan));
 
 
   return (
