@@ -5,20 +5,29 @@ import { House, Book, Phone, Code, User } from "phosphor-react";
 
 const Menu = () => {
   const [ativo, setAtivo] = React.useState(true);
-  const [indicator, setIndicator] = React.useState(true)
+  const [indicator, setIndicator] = React.useState(true);
+  const navs = document.querySelectorAll(".navlink--img");
 
-  
+  function activeNavLink(this: any)  {
+    navs.forEach((nav) => nav.classList.remove("ativo"));
+    this.classList.add('ativo')
+  };
+  navs.forEach((x)=> x.addEventListener('click',activeNavLink))
 
   const handleClick = () => {
-    setAtivo(!ativo)
+    // setAtivo(!ativo);
   };
   return (
     <div className="menu--container">
       <div className="menu--background">
         <nav className="menu">
           <NavLink to="/" end className="navlink" onClick={handleClick}>
-            <House size={30} color="black" className={`${ativo ? 'ativo' : '' } navlink--img`} />
-            <span className={`${ativo ? 'ativo' : '' }`}>Home</span>
+            <House
+              size={30}
+              color="black"
+              className={"navlink--img"}
+            />
+            <span className={`${ativo ? "ativo" : ""}`}>Home</span>
           </NavLink>
 
           <NavLink to="/port" className="navlink" onClick={handleClick}>
