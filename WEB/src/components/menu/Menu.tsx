@@ -1,25 +1,68 @@
-
+import house from '../../assets/house.svg'
+import book from '../../assets/book.svg'
+import code from '../../assets/code.svg'
+import phone from '../../assets/phone.svg'
+import user from '../../assets/user.svg'
 import { NavLink, useLocation } from "react-router-dom";
 import "./Menu.css";
-import { House, Book, Phone, Code, User } from "phosphor-react";
+import { useState } from 'react'
+
+const  ListButtons = [
+  
+   {
+      nome: 'Home',
+      path: '/',
+      image: house
+    },
+
+    {
+      nome: 'Portfólio',
+      path: '/port',
+      image: book
+    },
+
+    {
+      nome: 'Skills',
+      path: '/skills',
+      image: code
+    },
+
+    {
+      nome: 'Sobre',
+      path: '/sobre',
+      image: user
+    },
+
+    {
+      nome: 'Contato',
+      path: '/contato',
+      image: phone
+    }
+  
+]
 
 const Menu = () => {
-  const navs = document.querySelectorAll(".navlink--img");
-  const spans = Array.from(document.getElementsByTagName("span"));
+const [ativo,setAtivo] = useState(false)
 
-  function activeNavLink(this: any) {
-    navs.forEach((nav) => nav.classList.remove("ativo"));
-    this.classList.add("ativo");
-  }
-  navs.forEach((x) => x.addEventListener("click", activeNavLink));
-
+const handleClick = () =>{
+  console.log('deu certo')
+}
 
 
   return (
     <div className="menu--container">
       <div className="menu--background">
         <nav className="menu">
-          <NavLink to="/" end className="navlink">
+          {ListButtons.map((btn,i)=>{
+            return(
+              <NavLink key={`${btn.nome}-${i}`} to={btn.path} className="navlink" onClick={handleClick}>
+                <span className='navlink--img'>{btn.image}</span>
+                <span className='navlink--title'>{btn.nome}</span>
+              </NavLink>
+            )
+          })}
+          <div className="indicator"></div> 
+          {/* <NavLink to="/" end className="navlink">
 
               <House
                 size={30}
@@ -49,7 +92,7 @@ const Menu = () => {
             <User size={30} color="black" className="navlink--img" />
             <span>Sobre</span>
           </NavLink>
-          <div className="indicator"></div>
+          <div className="indicator"></div> */}
         </nav>
       </div>
     </div>
