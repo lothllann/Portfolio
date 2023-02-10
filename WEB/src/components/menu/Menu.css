@@ -12,7 +12,7 @@
 }
 
 .menu--background {
-  height: 385px;
+  height: 380px;
   width: 75px;
   display: flex;
   align-items: center;
@@ -96,7 +96,7 @@
   left: 75%;
   width: 70px;
   height: 70px;
-  background: #29fd53;
+  background: #581C71;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -107,14 +107,22 @@
 .indicator::before{
   content: '';
   position:absolute;
-  top: -30%;
+  top: -38%;
   left: 0px;
   width: 20px;
   height: 20px;
   background: transparent;
-  border-bottom-right-radius: 40px;
-  box-shadow: 2px 5px 0 0 #0d0d0d;
+  border-bottom-right-radius: 20px;
+  box-shadow: 10px 0 0 0 #0d0d0d;
 }
 .indicator::after{
-  
+  content: '';
+  position:absolute;
+  top: 54px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-right-radius: 20px;
+  box-shadow: 10px 0 0 0 #0d0d0d;
 }
