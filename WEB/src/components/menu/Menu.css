@@ -48,6 +48,8 @@
 .navlink--img {
   position: relative;
   display: block;
+  height: 30px;
+  width: 30px;
   text-align: center;
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -65,7 +67,7 @@
   -o-transform: translateX(45px);
 }
 
-.navlink span {
+.navlink .navlink--title {
   position: absolute;
   margin-top: 4px;
   transition: 0.5s;
