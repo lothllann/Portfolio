@@ -40,14 +40,24 @@ const ListButtons = [
 ];
 
 const Menu = () => {
-  const [ativo, setAtivo] = useState(false);
+  const [menuBtns, setMenuBtns] = useState<number[]>([]);
 
   return (
     <div className="menu--container">
       <div className="menu--background">
         <nav className="menu">
           {ListButtons.map((btn, i) => {
-            return <Button key={`${btn.nome}-${i}`} title={btn.nome} path={btn.path} image={btn.image} setAtivo={setAtivo} ativo={ativo} />;
+            return (
+              <Button
+                key={`${btn.nome}-${i}`}
+                title={btn.nome}
+                path={btn.path}
+                image={btn.image}
+                setMenuBtns={setMenuBtns}
+                menuBtns={menuBtns}
+                index={i}
+              />
+            );
           })}
           <div className="indicator"></div>
         </nav>

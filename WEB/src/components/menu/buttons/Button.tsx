@@ -7,20 +7,30 @@ interface Props {
   title: string;
   path: string;
   image: string;
-  setAtivo: (ativo:boolean) => void;
-  ativo: boolean
+  setMenuBtns: (menuBtns:number[]) => void;
+  menuBtns: number[];
+  index: number;
 }
 
-const Button = ({ title, path, image, setAtivo, ativo }: Props) => {
+const Button = ({ title, path, image, setMenuBtns, menuBtns, index }: Props) => {
   
 
-  const handleClick = () => {
-    setAtivo(!ativo);
+  const handleToggleClick = (index:number) => {
+    if(menuBtns.includes(index)){
+      const menuBtnsRemoved = menuBtns.filter((btnI)=> btnI !== index);
+      setMenuBtns(menuBtnsRemoved);
+    } else {
+      const menuBtnsAdd = [...menuBtns, index];
+      setMenuBtns(menuBtnsAdd)
+    }
+
+    console.log(menuBtns)
   };
+  
   return (
-    <NavLink to={path} className="navlink" onClick={handleClick}>
-      <img className={`${ativo ? "ativo" : ""} navlink--img`} src={image}></img>
-      <span className={`${ativo ? "ativo" : ""} navlink--title`}>{title}</span>
+    <NavLink to={path} className="navlink" onClick={()=>handleToggleClick(index)}>
+      <img className={`navlink--img`} src={image}></img>
+      <span className={`navlink--title`}>{title}</span>
     </NavLink>
   );
 };
