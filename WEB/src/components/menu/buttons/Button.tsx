@@ -17,11 +17,11 @@ const Button = ({ title, path, image, setMenuBtns, menuBtns, index }: Props) => 
 
   const handleToggleClick = (index:number) => {
     if(menuBtns.includes(index)){
-      const menuBtnsRemoved = menuBtns.filter((btnI)=> btnI !== index);
-      setMenuBtns(menuBtnsRemoved);
+      const menuBtnsActive= menuBtns.filter((btnI)=> btnI !== index);
+      setMenuBtns(menuBtnsActive);
     } else {
-      const menuBtnsAdd = [...menuBtns, index];
-      setMenuBtns(menuBtnsAdd)
+      const menuBtnsActive = menuBtns.filter((btnI)=> btnI === index);
+      setMenuBtns(menuBtnsActive)
     }
 
     console.log(menuBtns)
