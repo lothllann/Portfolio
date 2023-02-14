@@ -1,0 +1,28 @@
+.mainHome{
+  margin-left: 16rem;
+  margin-top: 16rem;
+}
+
+.TitleH1{
+  font-weight: 900;
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.MyNameHome{
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.MyNameHome span {
+  font-size: 1.4em;
+  font-style: italic;
+  font-weight: 700;
+  color: #581C71;
+}
+.aboutHome{
+  font-size: 1.3em;
+  text-align: justify;
+  width: 600px;
+  
+}
