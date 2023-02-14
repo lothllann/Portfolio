@@ -10,6 +10,7 @@
 }
 
 .MyNameHome{
+  margin-left: 26px;
   font-size: 1.3em;
   margin-bottom: 5px;
 }
@@ -21,6 +22,7 @@
   color: #581C71;
 }
 .aboutHome{
+  margin-left: 26px;
   font-size: 1.3em;
   text-align: justify;
   width: 600px;
