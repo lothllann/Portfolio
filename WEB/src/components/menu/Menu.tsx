@@ -4,7 +4,7 @@ import code from "../../assets/code.svg";
 import phone from "../../assets/phone.svg";
 import user from "../../assets/user.svg";
 import "./Menu.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "./buttons/Button";
 
 const ListButtons = [
@@ -40,7 +40,7 @@ const ListButtons = [
 ];
 
 const Menu = () => {
-  const [menuBtns, setMenuBtns] = useState<number[]>([]);
+
 
   return (
     <div className="menu--container">
@@ -53,8 +53,6 @@ const Menu = () => {
                 title={btn.nome}
                 path={btn.path}
                 image={btn.image}
-                setMenuBtns={setMenuBtns}
-                menuBtns={menuBtns}
                 index={i}
               />
             );

@@ -12,9 +12,9 @@ export const Home = () => {
         Meu nome é <span>Nickolas Ruppenthal,</span>
       </div>
       <div className='aboutHome'>
-        eu sou um desenvolvedor Front-End
-        seja muito bem vindo ao meu portfólio
-        e que a força esteja com voce.
+      Eu sou Web Developer,  muito bem vindo
+      ao meu portfólio, fique a vontade para ver 
+      meus projetos. E que a força esteja com voce
       </div>
     </section>
   </section>
