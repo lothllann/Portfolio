@@ -44,15 +44,17 @@ const Menu = () => {
           {ListButtons.map((btn, i) => {
             return (
               <Button
-                key={`${btn.nome}-${i}`}
+                key={i}
                 title={btn.nome}
                 path={btn.path}
                 image={btn.image}
                 index={i}
+                activeClassName='active'
               />
             );
           })}
           <div className="indicator"></div>
+          
         </nav>
       </div>
     </div>
