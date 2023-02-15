@@ -27,7 +27,7 @@ const ListButtons = [
   },
 
   {
-    nome: "Sobre",
+    nome: "About",
     path: "/sobre",
     image: user,
   },
