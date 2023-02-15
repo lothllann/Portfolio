@@ -1,15 +1,30 @@
-.mainHome{
-  margin-left: 16rem;
-  margin-top: 16rem;
+.mainHome {
+  margin-left: 200px;
+  margin-top: 12%;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: showToTheRight 0.5s ease-out forwards;
+  -webkit-animation: showToTheRight 0.5s ease-out forwards;
 }
 
-.TitleH1{
+@keyframes showToTheRight {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+
+.TitleH1 {
   font-weight: 900;
   font-size: 3em;
   margin-bottom: 15px;
 }
 
-.MyNameHome{
+.MyNameHome {
   margin-left: 26px;
   font-size: 1.3em;
   margin-bottom: 5px;
@@ -21,10 +36,17 @@
   font-weight: 700;
   color: #581C71;
 }
-.aboutHome{
+
+.aboutHome {
   margin-left: 26px;
   font-size: 1.3em;
   text-align: justify;
   width: 600px;
-  
+
+}
+
+@media(max-width: 1400px) {
+  .aboutHome {
+    width: 450px;
+  }
 }

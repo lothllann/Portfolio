@@ -15,7 +15,7 @@ export const Home = () => {
       <div className='aboutHome'>
       Eu sou Web Developer,  muito bem vindo
       ao meu portfólio, fique a vontade para ver 
-      meus projetos. E que a força esteja com voce
+      meus projetos. E que a força esteja com você.
       </div>
     </section>
   </>
