@@ -32,11 +32,6 @@ const ListButtons = [
     image: user,
   },
 
-  {
-    nome: "Contato",
-    path: "/contato",
-    image: phone,
-  },
 ];
 
 const Menu = () => {
