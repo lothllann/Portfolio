@@ -10,38 +10,40 @@ import EmailIcon from "@mui/icons-material/Email";
 const listOfSocialMedias = [
   {
     name: "GitHub",
-    image: <GitHubIcon sx={{ fontSize: 50, color: '#1C1C1C' }} />,
+    image: <GitHubIcon sx={{ fontSize: 40, color: "#BABBBD"  }} />,
     link: "https://github.com/lothllann",
     color: "#BABBBD",
   },
   {
     name: "Linkedin",
-    image: <LinkedInIcon sx={{ fontSize: 50, color: '#1C1C1C' }} />,
+    image: <LinkedInIcon sx={{ fontSize: 40, color: "#0A66C2" }} />,
     link: "https://www.linkedin.com/in/nickolas-ruppenthal-38b2ba167/",
     color: "#0A66C2",
   },
   {
     name: "Instagram",
-    image: <InstagramIcon sx={{ fontSize: 50, color: '#1C1C1C' }} />,
+    image: <InstagramIcon sx={{ fontSize: 40, color: "#E4405F" }} />,
     link: "https://www.instagram.com/ruupp___/",
     color: "#E4405F",
   },
   {
     name: "Gmail",
-    image: <EmailIcon sx={{ fontSize: 50, color: '#1C1C1C' }} />,
+    image: <EmailIcon sx={{ fontSize: 40, color: "#D14836" }} />,
     link: "https://github.com/lothllann",
     color: "#D14836",
   },
   {
     name: "WhatsApp",
-    image: <WhatsAppIcon sx={{ fontSize: 50, color: '#1C1C1C' }} />,
+    image: <WhatsAppIcon sx={{ fontSize: 40, color: "#25D366" }} />,
     link: "https://wa.me/5554991807117",
     color: "#25D366",
   },
 ];
 
+
 const Sobre = () => {
   const [open, setOPen] = React.useState(false);
+
 
   const handleToggle = () => {
     setOPen(!open);
@@ -70,7 +72,7 @@ const Sobre = () => {
           {listOfSocialMedias.map((socialMedia, i) => (
             <a key={`${socialMedia.name}-${i}`} href={socialMedia.link} className="socialMediaCard">
               <div className="sociallMediaImg">{socialMedia.image}</div>
-              <span className="sociallMediaText">{socialMedia.name}</span>
+              <span className={`sociallMediaText text-${socialMedia.name} text-GitHub` } >{socialMedia.name}</span>
             </a>
           ))}
         </div>

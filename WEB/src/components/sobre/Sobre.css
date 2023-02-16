@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 .card {
@@ -39,6 +40,9 @@
 .card.active {
   transition-delay: 0s;
   height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card .user {
@@ -136,19 +140,33 @@
 }
 
 .containerSocialMedia{
+  margin-top: 40px;
+  width: 450px;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  z-index: 100000;
+  gap: 15px;
 }
 
 .socialMediaCard{
   height: 50px;
   background: #fff;
   width: 200px;
+  font-size: 1rem ;
+  font-weight: 500;
   display: flex;
   gap: 15px;
+ 
+  align-items: center;
+  padding: 30px 15px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
+
+
 
