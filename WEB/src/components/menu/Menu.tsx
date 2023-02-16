@@ -49,7 +49,6 @@ const Menu = () => {
                 path={btn.path}
                 image={btn.image}
                 index={i}
-                activeClassName='active'
               />
             );
           })}

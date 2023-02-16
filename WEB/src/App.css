@@ -43,6 +43,7 @@ img {
 }
 
 .appBody{
-  flex:1
+  flex:1;
+  margin-left: 200px;
 }
 

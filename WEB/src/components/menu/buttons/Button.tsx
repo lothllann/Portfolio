@@ -7,13 +7,12 @@ interface Props {
   path: string;
   image: string;
   index: number;
-  activeClassName: string;
 }
 
-const Button = ({ title, path, image, index, activeClassName }: Props) => {
+const Button = ({ title, path, image, index, }: Props) => {
   return (
 
-      <NavLink key={`${index}-${title}`} to={path} className={`navlink`} activeclassName={activeClassName}>
+      <NavLink key={`${index}-${title}`} to={path} className={`navlink`} >
         <img className={`navlink--img`} src={image}></img>
         <span className={`navlink--title`}>{title}</span>
       </NavLink>

@@ -19,8 +19,6 @@
   z-index: 3;
 }
 
-
-
 .navlink.active .navlink--img {
   transform: translateX(56px);
   -webkit-transform: translateX(56px);
@@ -28,9 +26,6 @@
   -ms-transform: translateX(56px);
   -o-transform: translateX(56px);
 }
-
-
-
 
 .navlink .navlink--title {
   position: absolute;
@@ -60,8 +55,6 @@
   -o-transform: translateX(-15px);
 }
 
-
-
 .navlink:nth-child(1).active~.indicator {
   transform: translateY(calc(66px * 0));
   -webkit-transform: translateY(calc(66px * 0));
@@ -77,6 +70,7 @@
   -ms-transform: translateY(calc(65px * 1));
   -o-transform: translateY(calc(65px * 1));
 }
+
 .navlink:nth-child(3).active~.indicator {
   transform: translateY(calc(65px * 2));
   -webkit-transform: translateY(calc(65px * 2));
@@ -84,6 +78,7 @@
   -ms-transform: translateY(calc(65px * 2));
   -o-transform: translateY(calc(65px * 2));
 }
+
 .navlink:nth-child(4).active~.indicator {
   transform: translateY(calc(65px * 3));
   -webkit-transform: translateY(calc(65px * 3));
