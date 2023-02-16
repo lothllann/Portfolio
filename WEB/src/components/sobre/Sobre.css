@@ -102,12 +102,14 @@
 .toggle {
   position: absolute;
   bottom: 0;
+
   width: 120px;
   padding: 5px 15px;
   background-color: #fff;
   color: #1C1C1C;
   text-align: center;
   font-weight: 900;
+  font-size: 0.8rem;
   cursor: pointer;
   transition: 0.5s;
   border-radius: 30px;
