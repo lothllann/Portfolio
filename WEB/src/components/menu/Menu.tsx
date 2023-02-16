@@ -1,10 +1,8 @@
 import house from "../../assets/house.svg";
 import book from "../../assets/book.svg";
 import code from "../../assets/code.svg";
-import phone from "../../assets/phone.svg";
 import user from "../../assets/user.svg";
 import "./Menu.css";
-import { useEffect, useState } from "react";
 import Button from "./buttons/Button";
 
 const ListButtons = [
@@ -44,16 +42,15 @@ const Menu = () => {
           {ListButtons.map((btn, i) => {
             return (
               <Button
-                key={i}
+                key={`${btn.nome}-${i}`}
                 title={btn.nome}
                 path={btn.path}
                 image={btn.image}
-                index={i}
+                index={i}                
               />
             );
           })}
           <div className="indicator"></div>
-          
         </nav>
       </div>
     </div>
