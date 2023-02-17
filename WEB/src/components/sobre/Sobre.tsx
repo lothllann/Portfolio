@@ -6,6 +6,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
+import Head from '../helper/Head'
 
 const listOfSocialMedias = [
   {
@@ -48,6 +49,7 @@ const Sobre = () => {
   };
   return (
     <section className="mainAbout">
+      <Head title='Sobre' description='página que fala um pouco sobre mim' />
       <div className={`${open ? "active " : ""}card`}>
         <div className="user">
           <div className="img">
