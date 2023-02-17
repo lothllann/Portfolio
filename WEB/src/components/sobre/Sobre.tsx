@@ -50,6 +50,11 @@ const Sobre = () => {
   return (
     <section className="mainAbout">
       <Head title='Sobre' description='página que fala um pouco sobre mim' />
+
+      <div className="about">
+        teste
+      </div>
+
       <div className={`${open ? "active " : ""}card`}>
         <div className="user">
           <div className="img">
