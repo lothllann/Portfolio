@@ -131,6 +131,8 @@
   -o-transform: translateY(50%);
 }
 
+
+
 .card.active .user .toggle {
   background: #29fd53;
   color: #fff;
@@ -171,12 +173,27 @@
 }
 
 .socialMediaCard:hover{
-  
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
+}
+
+.containerSocialMedia a:nth-child(1):hover{
+  box-shadow: 0 0 4px #BABBBD, 0 0 12px #BABBBD, 0 0 22px #BABBBD;
+}
+.containerSocialMedia a:nth-child(2):hover{
+  box-shadow: 0 0 4px #0A66C2, 0 0 12px #0A66C2, 0 0 22px #0A66C2;
+}
+.containerSocialMedia a:nth-child(3):hover{
+  box-shadow: 0 0 4px #E4405F, 0 0 12px #E4405F, 0 0 22px #E4405F;
+}
+.containerSocialMedia a:nth-child(4):hover{
+  box-shadow: 0 0 4px #D14836, 0 0 12px #D14836, 0 0 22px #D14836;
+}
+.containerSocialMedia a:nth-child(5):hover{
+  box-shadow: 0 0 4px #25D366, 0 0 12px #25D366, 0 0 22px #25D366;
 }
 
 

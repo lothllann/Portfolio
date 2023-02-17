@@ -13,7 +13,7 @@ module.exports = {
         Instagram: '#E4405F',
         Gmail: '#D14836',
         WhatsApp: '#25D366'
-      }
+      },
     },
   },
   plugins: [],

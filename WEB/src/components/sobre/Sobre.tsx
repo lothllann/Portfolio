@@ -79,10 +79,10 @@ const Sobre = () => {
                 <span
                   data-textColor={socialMedia.name}
                   className="sociallMediaText 
-                   data-[textColor=GitHub]:text-GitHub
-                   data-[textColor=Linkedin]:text-Linkedin
-                   data-[textColor=Instagram]:text-Instagram
-                   data-[textColor=WhatsApp]:text-WhatsApp
+                   data-[textColor=GitHub]:text-GitHub 
+                   data-[textColor=Linkedin]:text-Linkedin 
+                   data-[textColor=Instagram]:text-Instagram 
+                   data-[textColor=WhatsApp]:text-WhatsApp 
                    data-[textColor=Gmail]:text-Gmail"
                 >
                   {socialMedia.name}
