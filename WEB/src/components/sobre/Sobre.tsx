@@ -10,7 +10,7 @@ import EmailIcon from "@mui/icons-material/Email";
 const listOfSocialMedias = [
   {
     name: "GitHub",
-    image: <GitHubIcon sx={{ fontSize: 40, color: "#BABBBD"  }} />,
+    image: <GitHubIcon sx={{ fontSize: 40, color: "#BABBBD" }} />,
     link: "https://github.com/lothllann",
     color: "#BABBBD",
   },
@@ -40,10 +40,8 @@ const listOfSocialMedias = [
   },
 ];
 
-
 const Sobre = () => {
   const [open, setOPen] = React.useState(false);
-
 
   const handleToggle = () => {
     setOPen(!open);
@@ -68,18 +66,30 @@ const Sobre = () => {
         </div>
 
         {open ? (
-        <div className="containerSocialMedia">
-          {listOfSocialMedias.map((socialMedia, i) => (
-            <a key={`${socialMedia.name}-${i}`} href={socialMedia.link} className="socialMediaCard">
-              <div className="sociallMediaImg">{socialMedia.image}</div>
-              <span className={`sociallMediaText text-${socialMedia.name} text-GitHub` } >{socialMedia.name}</span>
-            </a>
-          ))}
-        </div>
-      ): null}
+          <div className="containerSocialMedia">
+            {listOfSocialMedias.map((socialMedia, i) => (
+              <a
+                key={`${socialMedia.name}-${i}`}
+                href={socialMedia.link}
+                className="socialMediaCard"
+              >
+                <div className="sociallMediaImg">{socialMedia.image}</div>
+                <span
+                  data-textColor={socialMedia.name}
+                  className="sociallMediaText 
+                   data-[textColor=GitHub]:text-GitHub
+                   data-[textColor=Linkedin]:text-Linkedin
+                   data-[textColor=Instagram]:text-Instagram
+                   data-[textColor=WhatsApp]:text-WhatsApp
+                   data-[textColor=Gmail]:text-Gmail"
+                >
+                  {socialMedia.name}
+                </span>
+              </a>
+            ))}
+          </div>
+        ) : null}
       </div>
-
-      
     </section>
   );
 };
