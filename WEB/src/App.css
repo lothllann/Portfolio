@@ -25,6 +25,25 @@ p {
   margin: 0px;
 }
 
+h1{
+  display: inline-block;
+  letter-spacing: 2px; 
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 3em;
+  margin-bottom: 15px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+h1:hover{
+  text-shadow: red -2px 0, cyan 2px 0;
+
+}
+
 ul,
 li {
   list-style: none;

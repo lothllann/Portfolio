@@ -2,11 +2,11 @@
   margin-top: 12%;
   opacity: 0;
   transform: translateX(-50px);
-  animation: showToTheRight 0.5s ease-out forwards;
-  -webkit-animation: showToTheRight 0.5s ease-out forwards;
+  animation: show 0.5s ease-out forwards;
+  -webkit-animation: show 0.5s ease-out forwards;
 }
 
-@keyframes showToTheRight {
+@keyframes show {
   to {
     transform: translateX(0);
     opacity: 1;
