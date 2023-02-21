@@ -1,5 +1,4 @@
 .mainAbout {
-  height: 100vh;
   margin-top: 12%;
   display: flex;
   justify-content: space-between;
@@ -19,11 +18,7 @@
   margin-bottom: 100px;
 }
 
-.about h1{
-  font-weight: 900;
-  font-size: 3em;
-  margin-bottom: 15px;
-}
+
 
 .about > div {
   margin-left: 26px;
@@ -329,10 +324,13 @@
   
   .about {
     margin-right: 0px;
+    display: flex;
+    flex-direction: column;
   }
 
   .about h1{
     text-align: center;
+    
   }
 
   .about > div{

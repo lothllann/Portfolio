@@ -57,7 +57,7 @@ const Sobre = () => {
 
 
       <div className="about">
-        <h1>Sobre Mim</h1>
+        <h1 className="text-4xl font-extrabold mb-5">Sobre Mim</h1>
         <div>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever

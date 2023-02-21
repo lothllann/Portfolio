@@ -1,0 +1,7 @@
+.mainSkills {
+  margin-top: 12%;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: show 0.5s ease-out forwards;
+  -webkit-animation: show 0.5s ease-out forwards;
+}

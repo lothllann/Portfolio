@@ -8,7 +8,7 @@ export const Home = () => {
     <Head title='Home' description='Home do meu portfólio pessoal' />
 
     <section className='mainHome'>
-      <h1 className='TitleH1'>Hello There!</h1>
+      <h1 className="text-4xl font-extrabold mb-5">Hello There!</h1>
       <div className='MyNameHome' >
         Meu nome é <span>Nickolas Ruppenthal</span>.
       </div>
