@@ -4,6 +4,8 @@ import code from "../../assets/code.svg";
 import user from "../../assets/user.svg";
 import "./Menu.css";
 import Button from "./buttons/Button";
+import React from "react";
+
 
 const ListButtons = [
   {
@@ -33,10 +35,11 @@ const ListButtons = [
 ];
 
 const Menu = () => {
-
+const [animationState, setAnimationState] = React.useState({isStopped: false, isPaused: false})
 
   return (
     <div className="menu--container">
+
       <div className="menu--background">
         <nav className="menu">
           {ListButtons.map((btn, i) => {
@@ -58,3 +61,6 @@ const Menu = () => {
 };
 
 export default Menu;
+
+
+

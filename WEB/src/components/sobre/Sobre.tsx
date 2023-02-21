@@ -9,6 +9,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
 import Head from "../helper/Head";
 
+
 const listOfSocialMedias = [
   {
     name: "GitHub",
@@ -43,6 +44,7 @@ const listOfSocialMedias = [
 ];
 
 const Sobre = () => {
+
   const [open, setOPen] = React.useState(false);
 
   const handleToggle = () => {
@@ -51,6 +53,8 @@ const Sobre = () => {
   return (
     <section className="mainAbout">
       <Head title="Sobre" description="página que fala um pouco sobre mim" />
+
+
 
       <div className="about">
         <h1>Sobre Mim</h1>

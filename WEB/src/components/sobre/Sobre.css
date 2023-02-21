@@ -1,6 +1,6 @@
 .mainAbout {
   height: 100vh;
-  padding-top: 12%;
+  margin-top: 12%;
   display: flex;
   justify-content: space-between;
 }
