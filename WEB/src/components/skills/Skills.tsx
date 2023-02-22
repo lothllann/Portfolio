@@ -68,7 +68,22 @@ const Skills = () => {
           <div className="cardsContainer--Linguagens">
             {languagesInfo.map((language,i)=>{
               return(
-                <div key={i} className='card--language'>{language.title}</div>
+                <div key={i} className='card--language'>
+                  <div className="box">
+                    <div>
+                      <div className="percent">
+                        <svg>
+                          <circle cx='50' cy='50' r='50'></circle>
+                          <circle cx='50' cy='50' r='50'></circle>
+                        </svg>
+                        <div className="number">
+                          <h2>{language.percentage}<span>%</span></h2>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                  <div className="title">{language.title}</div>
+                </div>
               )
             })}
           </div>
