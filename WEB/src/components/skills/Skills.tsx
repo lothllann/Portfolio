@@ -31,6 +31,14 @@ const Skills = () => {
             <div className="bigArrow"> <KeyboardArrowDownRoundedIcon sx={{fontSize:70}} /> </div>
           </div>
         </div>
+
+        <div className="Linguagens">
+          <h1 className="text-4xl font-extrabold mb-5">Linguagens de Programação</h1>
+        </div>
+
+        <div className="tecnologias">
+          <h1 className="text-4xl font-extrabold mb-5">Tecnologias</h1>
+        </div>
       </section>
     </>
   );
