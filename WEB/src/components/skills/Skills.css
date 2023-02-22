@@ -1,7 +1,26 @@
 .mainSkills {
-  margin-top: 12%;
+  
   opacity: 0;
   transform: translateX(-50px);
   animation: show 0.5s ease-out forwards;
   -webkit-animation: show 0.5s ease-out forwards;
+}
+
+.introSkills{
+  margin-top: 100px;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.arrows{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.smallArrow, .bigArrow{
+  display: inline;
+
 }
