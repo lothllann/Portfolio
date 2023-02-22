@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "../helper/Head";
 import "./Skills.css";
+import "../../App.css";
 import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded'; //seta menor para baixo
 
 
@@ -19,7 +20,7 @@ const Skills = () => {
             <div>
             Como eu curto mais o <span>Front-End</span> as minhas habilidades
             estão mais concentradas nessa area, porém eu pretendo evoluir mais
-            no <span>Back-End</span>. Eu quero me tornar Full-Stack no futuro e
+            no <span>Back-End</span>.<br/> Eu quero me tornar <span>Full-Stack</span> no futuro e
             fazer apps mobiles também.
             </div>
 

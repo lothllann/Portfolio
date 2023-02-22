@@ -1,5 +1,5 @@
 .mainHome {
-  margin-top: 12%;
+  margin-top: 100px;
   opacity: 0;
   transform: translateX(-50px);
   animation: show 0.5s ease-out forwards;

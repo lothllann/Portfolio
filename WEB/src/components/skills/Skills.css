@@ -1,9 +1,6 @@
 .mainSkills {
-  
-  opacity: 0;
-  transform: translateX(-50px);
-  animation: show 0.5s ease-out forwards;
-  -webkit-animation: show 0.5s ease-out forwards;
+
+
 }
 
 .introSkills{
@@ -12,15 +9,109 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+}
+
+.apresentacao{
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: show 0.5s ease-out forwards;
+  -webkit-animation: show 0.5s ease-out forwards;
+}
+
+.apresentacao > div{
+  margin-left: 26px;
+  min-width: 300px;
+  width: 70%;
+  max-width: 750px;
+  font-size: 1.3em;
+  text-align: justify;
 }
 
 .arrows{
+  opacity: 0;
+  transform: translatey(-100px);
+  animation: show 0.7s 0.3s ease-out forwards;
   display: flex;
   flex-direction: column;
   position: relative;
+  align-self: center;
+  -webkit-animation: show 0.7s 0.3s ease-out forwards;
+  -webkit-transform: translatey(-100px);
+  -moz-transform: translatey(-100px);
+  -ms-transform: translatey(-100px);
+  -o-transform: translatey(-100px);
+  bottom :15px;
 }
 
-.smallArrow, .bigArrow{
-  display: inline;
-
+.smallArrow{
+  position: absolute;
+  right: 7.5px;
+  bottom: 25px;
+  animation: smallArrowAnime 1.5s infinite ease-in-out;
+  -webkit-animation: smallArrowAnime 1.5s infinite ease-in-out;
 }
+
+.bigArrow{
+  animation: bigArrowAnime 1.5s infinite ease-in-out;
+  -webkit-animation: bigArrowAnime 1.5s infinite ease-in-out;
+}
+
+
+@keyframes smallArrowAnime {
+  0%{
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+}
+
+
+
+  50%{
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+}
+
+
+  100%{
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+}
+}
+
+@keyframes bigArrowAnime {
+  0%{
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(12px);
+    -webkit-transform: translateY(12px);
+    -moz-transform: translateY(12px);
+    -ms-transform: translateY(12px);
+    -o-transform: translateY(12px);
+}
+
+
+  100%{
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+}
+
+
