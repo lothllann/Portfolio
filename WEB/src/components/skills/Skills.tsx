@@ -1,5 +1,10 @@
 import React from "react";
 import Head from "../helper/Head";
+import css from "../../assets/css.svg";
+import js from "../../assets/js.svg";
+import html from "../../assets/html.svg";
+import java from "../../assets/java.svg";
+import ts from "../../assets/ts.svg";
 import "./Skills.css";
 import "../../App.css";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded"; //seta menor para baixo
@@ -7,27 +12,27 @@ import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownR
 const languagesInfo = [
   {
     title: "CSS",
-    image: "",
+    image: css,
     percentage: 28,
   },
   {
     title: "JavaScript",
-    image: "",
+    image: js,
     percentage: 24,
   },
   {
     title: "HTML",
-    image: "",
+    image: html,
     percentage: 21,
   },
   {
     title: "Java",
-    image: "",
+    image: java,
     percentage: 15,
   },
   {
     title: "TypeScript",
-    image: "",
+    image: ts,
     percentage: 10,
   },
 ];
@@ -71,10 +76,11 @@ const Skills = () => {
                 <div key={i} className='card--language'>
                   <div className="box">
                     <div>
+                      <div className="icon"><img src={language.image} alt="" /></div>
                       <div className="percent">
                         <svg>
                           <circle cx='70' cy='70' r='70'></circle>
-                          <circle cx='70' cy='70' r='70'></circle>
+                          <circle cx='70' cy='70' r='70'></circle> 
                         </svg>
                         <div className="number">
                           <h2>{language.percentage}<span>%</span></h2>
