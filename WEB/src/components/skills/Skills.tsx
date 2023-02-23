@@ -70,6 +70,13 @@ const Skills = () => {
           <h1 className="text-4xl font-extrabold mb-5">
             Linguagens de Programação
           </h1>
+
+          <div className="text--languages">
+            Estas são as Linguagens de Programação que eu conheço.<br />
+            A porcentagem tem como base os projetos upados no meu <a href="https://github.com/lothllann">GitHub</a>.
+          </div>
+
+
           <div className="cardsContainer--Linguagens">
             {languagesInfo.map((language,i)=>{
               return(
@@ -104,3 +111,6 @@ const Skills = () => {
 };
 
 export default Skills;
+
+
+{/* <div> Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"> Smashicons </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div> */}
