@@ -13,22 +13,22 @@ const languagesInfo = [
   {
     title: "JavaScript",
     image: "",
-    percentage: 24.14,
+    percentage: 24,
   },
   {
     title: "HTML",
     image: "",
-    percentage: 21.8,
+    percentage: 21,
   },
   {
     title: "Java",
     image: "",
-    percentage: 15.44,
+    percentage: 15,
   },
   {
     title: "TypeScript",
     image: "",
-    percentage: 10.62,
+    percentage: 10,
   },
 ];
 
@@ -73,8 +73,8 @@ const Skills = () => {
                     <div>
                       <div className="percent">
                         <svg>
-                          <circle cx='50' cy='50' r='50'></circle>
-                          <circle cx='50' cy='50' r='50'></circle>
+                          <circle cx='70' cy='70' r='70'></circle>
+                          <circle cx='70' cy='70' r='70'></circle>
                         </svg>
                         <div className="number">
                           <h2>{language.percentage}<span>%</span></h2>
