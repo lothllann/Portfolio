@@ -135,8 +135,8 @@
 
 .card--language {
   position: relative;
-  height: 200px;
-  width: 175px;
+  height: 250px;
+  width: 225px;
   text-align: center;
   z-index: 10;
   margin: 20px 20px 60px;
@@ -253,11 +253,11 @@ svg circle {
   stroke-width: 8;
   stroke:rgba(255, 255, 255, 0.05);
   stroke-linecap: round;
-  /* transform: translate(25px, 25px) ;
-  -webkit-transform: translate(25px, 25px) ;
-  -moz-transform: translate(25px, 25px) ;
-  -ms-transform: translate(25px, 25px) ;
-  -o-transform: translate(25px, 25px) ; */
+  transform: translate(5px, 5px) ;
+  -webkit-transform: translate(5px, 5px) ;
+  -moz-transform: translate(5px, 5px) ;
+  -ms-transform: translate(5px, 5px) ;
+  -o-transform: translate(5px, 5px) ;
 }
 
 svg circle:nth-child(2) {
