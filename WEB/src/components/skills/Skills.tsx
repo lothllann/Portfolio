@@ -9,6 +9,13 @@ import "./Skills.css";
 import "../../App.css";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded"; //seta menor para baixo
 
+import Lottie from "lottie-react";
+import bible from '../lottieFiles/bible.json';
+import groovyWalkAnimation from "../lottieFiles/groovyWalk.json";
+
+// define "lord-icon" custom element with default properties
+
+
 const languagesInfo = [
   {
     title: "CSS",
@@ -67,43 +74,60 @@ const Skills = () => {
         </div>
 
         <div className="linguagensSkills">
-          <h1 className="text-4xl font-extrabold mb-5">
-            Linguagens de Programação
-          </h1>
-
           <div className="text--languages">
-            Estas são as Linguagens de Programação que eu conheço.<br />
-            A porcentagem tem como base os projetos upados no meu <a href="https://github.com/lothllann">GitHub</a>.
+            <h1 className="text-4xl font-extrabold mb-5">
+              Linguagens de Programação
+            </h1>
+
+            <p>
+              Estas são as Linguagens de Programação que eu conheço.
+              <br />A porcentagem tem como base os projetos upados no meu{" "}
+              <a href="https://github.com/lothllann">GitHub</a>.
+            </p>
           </div>
 
-
           <div className="cardsContainer--Linguagens">
-            {languagesInfo.map((language,i)=>{
-              return(
-                <div key={i} className='card--language'>
+            {languagesInfo.map((language, i) => {
+              return (
+                <div key={i} className="card--language">
                   <div className="box">
                     <div>
-                      <div className="icon"><img src={language.image} alt="" /></div>
+                      <div className="icon">
+                        <img src={language.image} alt="" />
+                      </div>
                       <div className="percent">
                         <svg>
-                          <circle cx='70' cy='70' r='70'></circle>
-                          <circle cx='70' cy='70' r='70'></circle> 
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle cx="70" cy="70" r="70"></circle>
                         </svg>
                         <div className="number">
-                          <h2>{language.percentage}<span>%</span></h2>
+                          <h2>
+                            {language.percentage}
+                            <span>%</span>
+                          </h2>
                         </div>
                       </div>
-                    </div> 
+                    </div>
                   </div>
                   <div className="title">{language.title}</div>
                 </div>
-              )
+              );
             })}
+          </div>
+          <div className="arrows">
+            <div className="smallArrow">
+              <KeyboardArrowDownRoundedIcon sx={{ fontSize: 55 }} />
+            </div>
+            <div className="bigArrow">
+              <KeyboardArrowDownRoundedIcon sx={{ fontSize: 70 }} />
+            </div>
           </div>
         </div>
 
         <div className="tecnologias">
           <h1 className="text-4xl font-extrabold mb-5">Tecnologias</h1>
+
+         
         </div>
       </section>
     </>
@@ -112,5 +136,6 @@ const Skills = () => {
 
 export default Skills;
 
-
-{/* <div> Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"> Smashicons </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div> */}
+{
+  /* <div> Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"> Smashicons </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div> */
+}
