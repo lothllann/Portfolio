@@ -43,6 +43,12 @@
 
 }
 
+.obi-wan{
+position: absolute;
+bottom: 0;
+right: 0;
+}
+
 @media(max-width: 1400px) {
   .aboutHome {
     width: 450px;

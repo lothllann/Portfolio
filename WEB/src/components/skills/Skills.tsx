@@ -9,12 +9,8 @@ import "./Skills.css";
 import "../../App.css";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded"; //seta menor para baixo
 
-import Lottie from "lottie-react";
-import bible from '../lottieFiles/bible.json';
-import groovyWalkAnimation from "../lottieFiles/groovyWalk.json";
 
 // define "lord-icon" custom element with default properties
-
 
 const languagesInfo = [
   {
@@ -127,7 +123,6 @@ const Skills = () => {
         <div className="tecnologias">
           <h1 className="text-4xl font-extrabold mb-5">Tecnologias</h1>
 
-         
         </div>
       </section>
     </>
