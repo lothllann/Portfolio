@@ -7,7 +7,8 @@ import java from "../../assets/java.svg";
 import ts from "../../assets/ts.svg";
 import "./Skills.css";
 import "../../App.css";
-import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded"; //seta menor para baixo
+import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
+
 
 
 // define "lord-icon" custom element with default properties
@@ -59,6 +60,8 @@ const Skills = () => {
               <span> Full-Stack</span> no futuro e fazer apps mobiles também.
             </div>
           </div>
+
+
           <div className="arrows">
             <div className="smallArrow">
               <KeyboardArrowDownRoundedIcon sx={{ fontSize: 55 }} />
