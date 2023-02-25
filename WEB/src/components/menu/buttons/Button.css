@@ -8,9 +8,6 @@
 .navlink--img {
   position: relative;
   display: block;
-  height: 30px;
-  width: 30px;
-  text-align: center;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -21,13 +18,7 @@
 
 
 
-.navlink.active .navlink--img {
-  transform: translateX(56px);
-  -webkit-transform: translateX(56px);
-  -moz-transform: translateX(56px);
-  -ms-transform: translateX(56px);
-  -o-transform: translateX(56px);
-}
+
 
 .navlink .navlink--title {
   position: absolute;
@@ -40,10 +31,10 @@
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-  -webkit-transform: translateX(-20px);
-  -moz-transform: translateX(-20px);
-  -ms-transform: translateX(-20px);
-  -o-transform: translateX(-20px);
+  -webkit-transform: translateX(-50px);
+  -moz-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  -o-transform: translateX(-50px);
 }
 
 
@@ -57,6 +48,14 @@
   -o-transform: translateX(-15px);
 }
 
+.navlink.active .navlink--img {
+  transform: translateX(57px);
+  -webkit-transform: translateX(57px);
+  -moz-transform: translateX(57px);
+  -ms-transform: translateX(57px);
+  -o-transform: translateX(57px);
+}
+
 .navlink:nth-child(1).active~.indicator {
   transform: translateY(calc(66px * 0));
   -webkit-transform: translateY(calc(66px * 0));
@@ -66,25 +65,25 @@
 }
 
 .navlink:nth-child(2).active~.indicator {
-  transform: translateY(calc(65px * 1));
-  -webkit-transform: translateY(calc(65px * 1));
-  -moz-transform: translateY(calc(65px * 1));
-  -ms-transform: translateY(calc(65px * 1));
-  -o-transform: translateY(calc(65px * 1));
+  transform: translateY(calc(87px * 1));
+  -webkit-transform: translateY(calc(87px * 1));
+  -moz-transform: translateY(calc(87px * 1));
+  -ms-transform: translateY(calc(87px * 1));
+  -o-transform: translateY(calc(87px * 1));
 }
 
 .navlink:nth-child(3).active~.indicator {
-  transform: translateY(calc(65px * 2));
-  -webkit-transform: translateY(calc(65px * 2));
-  -moz-transform: translateY(calc(65px * 2));
-  -ms-transform: translateY(calc(65px * 2));
-  -o-transform: translateY(calc(65px * 2));
+  transform: translateY(calc(87px * 2));
+  -webkit-transform: translateY(calc(87px * 2));
+  -moz-transform: translateY(calc(87px * 2));
+  -ms-transform: translateY(calc(87px * 2));
+  -o-transform: translateY(calc(87px * 2));
 }
 
 .navlink:nth-child(4).active~.indicator {
-  transform: translateY(calc(65px * 3));
-  -webkit-transform: translateY(calc(65px * 3));
-  -moz-transform: translateY(calc(65px * 3));
-  -ms-transform: translateY(calc(65px * 3));
-  -o-transform: translateY(calc(65px * 3));
+  transform: translateY(calc(86px * 3));
+  -webkit-transform: translateY(calc(86px * 3));
+  -moz-transform: translateY(calc(86px * 3));
+  -ms-transform: translateY(calc(86px * 3));
+  -o-transform: translateY(calc(86px * 3));
 }

@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 interface Props {
   title: string;
   path: string;
-  image: string;
+  image: string | JSX.Element;
   index: number;
 }
 
@@ -13,7 +13,7 @@ const Button = ({ title, path, image, index, }: Props) => {
   return (
 
       <NavLink key={`${index}-${title}`} to={path} className={`navlink`} >
-        <img className={`navlink--img`} src={image}></img>
+        <div className={`navlink--img`}>{image}</div>
         <span className={`navlink--title`}>{title}</span>
       </NavLink>
 

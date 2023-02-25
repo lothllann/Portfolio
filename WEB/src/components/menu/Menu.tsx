@@ -1,35 +1,38 @@
-import house from "../../assets/house.svg";
-import book from "../../assets/book.svg";
-import code from "../../assets/code.svg";
-import user from "../../assets/user.svg";
+import pc from "../lottieFiles/computer.json";
+import code from "../lottieFiles/code.json";
+import dev from "../lottieFiles/it-developer.json";
+import book from "../lottieFiles/book.json";
+
 import "./Menu.css";
 import Button from "./buttons/Button";
 import React from "react";
+import Lottie from "lottie-react";
+
 
 
 const ListButtons = [
   {
     nome: "Home",
     path: "/",
-    image: house,
+    image: <Lottie animationData={pc} loop={false} style={{width: 50, height: 50}}/>,
   },
 
   {
     nome: "Works",
     path: "/port",
-    image: book,
+    image: <Lottie animationData={book} loop={false} style={{width: 50, height: 50}}/>,
   },
 
   {
     nome: "Skills",
     path: "/skills",
-    image: code,
+    image: <Lottie animationData={code} loop={false} style={{width: 50, height: 50}}/>,
   },
 
   {
     nome: "About",
     path: "/sobre",
-    image: user,
+    image: <Lottie animationData={dev} loop={false} style={{width: 50, height: 50}}/>,
   },
 
 ];
