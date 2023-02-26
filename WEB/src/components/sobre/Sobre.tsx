@@ -52,7 +52,7 @@ const Sobre = () => {
   };
   return (
     <section className="mainAbout">
-      <Head title="Sobre" description="página que fala um pouco sobre mim" />
+      <Head title="About" description="página que fala um pouco sobre mim" />
 
 
 
