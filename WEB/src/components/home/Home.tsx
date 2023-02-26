@@ -14,6 +14,7 @@ export const Home = () => {
         <h1 className="text-4xl font-extrabold mb-5">Home!</h1>
         <div className="MyNameHome">
           Meu nome é <span>Nickolas Ruppenthal</span>.
+          
         </div>
         <div className="aboutHome">
           Eu sou Web Developer, muito bem vindo ao meu portfólio, fique a
