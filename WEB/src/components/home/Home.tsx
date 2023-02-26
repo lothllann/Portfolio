@@ -5,6 +5,10 @@ import Lottie from "lottie-react";
 import ObiWan from "../lottieFiles/Obi-wann.json";
 import { width } from "@mui/system";
 
+const style = {
+  height: 0.8 * window.innerHeight
+}
+
 export const Home = () => {
   return (
     <>
@@ -24,7 +28,7 @@ export const Home = () => {
       <div className="obi-wan">
           <Lottie
             animationData={ObiWan}
-            style={{ width: 550 }}
+            style={ style }
           ></Lottie>
         </div>
     </>
