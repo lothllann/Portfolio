@@ -40,12 +40,11 @@
 
 .navlink.active .navlink--title {
   opacity: 1;
-  text-align: end;
-  transform: translateX(-15px);
-  -webkit-transform: translateX(-15px);
-  -moz-transform: translateX(-15px);
-  -ms-transform: translateX(-15px);
-  -o-transform: translateX(-15px);
+  transform: translate(-5px, 12px);
+  -webkit-transform: translate(-5px, 12px);
+  -moz-transform: translate(-5px, 12px);
+  -ms-transform: translate(-5px, 12px);
+  -o-transform: translate(-5px, 12px);
 }
 
 .navlink.active .navlink--img {

@@ -8,10 +8,8 @@ import ts from "../../assets/ts.svg";
 import "./Skills.css";
 import "../../App.css";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
-
-
-
-// define "lord-icon" custom element with default properties
+import Lottie from "lottie-react";
+import bb8 from  "../lottieFiles/bb8.json";
 
 const languagesInfo = [
   {
@@ -40,6 +38,9 @@ const languagesInfo = [
     percentage: 10,
   },
 ];
+const style={
+  height: 0.5 * window.innerHeight,
+}
 
 const Skills = () => {
   return (
@@ -59,6 +60,10 @@ const Skills = () => {
               no <span>Back-End</span>.<br /> Eu quero me tornar
               <span> Full-Stack</span> no futuro e fazer apps mobiles também.
             </div>
+          </div>
+
+          <div className="bb8">
+            <Lottie animationData={bb8} loop={true} style={style}></Lottie>
           </div>
 
 

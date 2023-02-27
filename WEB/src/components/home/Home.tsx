@@ -3,7 +3,7 @@ import Head from "../helper/Head";
 import "./Home.css";
 import Lottie from "lottie-react";
 import ObiWan from "../lottieFiles/Obi-wann.json";
-import { width } from "@mui/system";
+
 
 const style = {
   height: 0.8 * window.innerHeight

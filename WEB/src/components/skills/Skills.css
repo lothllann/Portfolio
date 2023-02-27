@@ -5,6 +5,8 @@
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 150px;
+
+  
 }
 
 .apresentacao {
@@ -16,6 +18,7 @@
   -moz-transform: translateX(50px);
   -ms-transform: translateX(50px);
   -o-transform: translateX(50px);
+
 }
 
 .apresentacao>div {
@@ -353,7 +356,51 @@ svg circle:nth-child(2) {
   font-size: 1.2em;
 }
 
-.rey{
+.bb8{
+  position: relative;
+  z-index: -1;
+  max-width: 400px;
+  animation: bb8Move infinite 15s;
+  -webkit-animation: bb8Move infinite 15s;
+}
 
-  align-self: center;
+@keyframes bb8Move {
+  0% {
+    transform: translatex(-100px);
+    -webkit-transform: translatex(-100px);
+    -moz-transform: translatex(-100px);
+    -ms-transform: translatex(-100px);
+    -o-transform: translatex(-100px);
+}
+
+25%{
+  transform: translateX(220px);
+  -webkit-transform: translateX(220px);
+  -moz-transform: translateX(220px);
+  -ms-transform: translateX(220px);
+  -o-transform: translateX(220px);
+}
+
+50%{
+  transform: translateX(440px);
+  -webkit-transform: translateX(440px);
+  -moz-transform: translateX(440px);
+  -ms-transform: translateX(440px);
+  -o-transform: translateX(440px);
+}
+
+75%{
+  transform: translateX(220px);
+  -webkit-transform: translateX(220px);
+  -moz-transform: translateX(220px);
+  -ms-transform: translateX(220px);
+  -o-transform: translateX(220px);
+}
+100%{
+  transform: translatex(-100px);
+  -webkit-transform: translatex(-100px);
+  -moz-transform: translatex(-100px);
+  -ms-transform: translatex(-100px);
+  -o-transform: translatex(-100px);
+}
 }
