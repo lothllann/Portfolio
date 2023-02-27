@@ -374,14 +374,7 @@ svg circle:nth-child(2) {
     -o-transform: translatex(0px);
 }
 
-/* 25%{
-  opacity: 1;
-  transform: translateX(220px);
-  -webkit-transform: translateX(220px);
-  -moz-transform: translateX(220px);
-  -ms-transform: translateX(220px);
-  -o-transform: translateX(220px);
-} */
+
 
 50%{
   opacity: 1;
@@ -392,14 +385,7 @@ svg circle:nth-child(2) {
   -o-transform: translateX(440px);
 }
 
-/* 75%{
-  opacity: 1;
-  transform: translateX(220px);
-  -webkit-transform: translateX(220px);
-  -moz-transform: translateX(220px);
-  -ms-transform: translateX(220px);
-  -o-transform: translateX(220px);
-} */
+
 100%{
   opacity: 1;
   transform: translatex(0px);

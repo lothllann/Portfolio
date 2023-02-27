@@ -8,6 +8,12 @@ import Button from "./buttons/Button";
 import React from "react";
 import Lottie from "lottie-react";
 
+import lottie from 'lottie-web';
+import { defineElement } from 'lord-icon-element';
+
+// define "lord-icon" custom element with default properties
+defineElement(lottie.loadAnimation);
+
 
 
 
@@ -15,7 +21,7 @@ const ListButtons = [
   {
     nome: "Home",
     path: "/",
-    image: <Lottie id='firstLottie' animationData={pc} loop={false} style={{width: 50, height: 50}}/>,
+    image:  <Lottie id='firstLottie' animationData={pc} loop={false} style={{width: 50, height: 50}}/>
   },
 
   {
