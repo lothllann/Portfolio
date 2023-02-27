@@ -1,6 +1,10 @@
-import React from 'react'
 
-const Portfolio = () => {
+import '@lottiefiles/lottie-player';
+
+
+
+const Portfolio = ()=> {
+
   return (
     <div>Portfolio</div>
   )

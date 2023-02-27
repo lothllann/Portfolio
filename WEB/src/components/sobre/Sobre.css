@@ -157,20 +157,21 @@
 }
 
 .containerSocialMedia{
-  margin-top: 40px;
+  margin-top: 50px;
   width: 400px;
   position: relative;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 
 }
 
 .socialMediaCard{
   height: 50px;
-  width: 190px;
+  width: 80%;
   background: #fff;
   font-size: 1rem ;
   font-weight: 500;
@@ -293,8 +294,7 @@
 
 .socialMediaCard{
   height: 40px;
-  width: 150px; 
-  gap: 0;
+  gap: 0px;
 }
 
 .containerSocialMedia{

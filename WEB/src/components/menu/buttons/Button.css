@@ -67,7 +67,6 @@
 
 .navlink:nth-child(3).active~.indicator {
   transform: translateY(calc(86px * 2));
-
 }
 
 .navlink:nth-child(4).active~.indicator {

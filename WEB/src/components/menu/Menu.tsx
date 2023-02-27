@@ -7,14 +7,15 @@ import "./Menu.css";
 import Button from "./buttons/Button";
 import React from "react";
 import Lottie from "lottie-react";
-import lottie from "lottie-web";
+
+
 
 
 const ListButtons = [
   {
     nome: "Home",
     path: "/",
-    image: <Lottie animationData={pc} loop={false}  style={{width: 50, height: 50}} />,
+    image: <Lottie id='firstLottie' animationData={pc} loop={false} style={{width: 50, height: 50}}/>,
   },
 
   {
@@ -38,6 +39,7 @@ const ListButtons = [
 ];
 
 const Menu = () => {
+
 const [animationState, setAnimationState] = React.useState({isStopped: false, isPaused: false})
 
   return (
