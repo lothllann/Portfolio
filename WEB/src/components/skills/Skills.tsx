@@ -9,7 +9,7 @@ import "./Skills.css";
 import "../../App.css";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import Lottie from "lottie-react";
-import bb8 from  "../lottieFiles/bb8.json";
+import bb8 from "../lottieFiles/bb8.json";
 
 const languagesInfo = [
   {
@@ -38,9 +38,9 @@ const languagesInfo = [
     percentage: 10,
   },
 ];
-const style={
+const style = {
   height: 0.5 * window.innerHeight,
-}
+};
 
 const Skills = () => {
   return (
@@ -50,7 +50,6 @@ const Skills = () => {
         description="página que mostra as tecnologias que conheço"
       />
       <section className="mainSkills">
-
         <div className="introSkills">
           <div className="apresentacao">
             <h1 className="text-4xl font-extrabold mb-5">Skills</h1>
@@ -66,7 +65,6 @@ const Skills = () => {
           <div className="bb8">
             <Lottie animationData={bb8} loop={true} style={style}></Lottie>
           </div>
-
 
           <div className="arrows">
             <div className="smallArrow">
@@ -85,8 +83,8 @@ const Skills = () => {
             </h1>
 
             <p>
-              Estas são as Linguagens de Programação que eu conheço.<br/>
-              A porcentagem tem como base os projetos upados no meu
+              Estas são as Linguagens de Programação que eu conheço.
+              <br />A porcentagem tem como base os projetos upados no meu
               <a href="https://github.com/lothllann"> GitHub</a>.
             </p>
           </div>
@@ -131,10 +129,19 @@ const Skills = () => {
 
         <div className="tecnologias">
           <h1 className="text-4xl font-extrabold mb-5">Tecnologias</h1>
-            <p>Nesta seção eu separei todas <span>(</span>que eu lembro pelo menos<span>)</span> as bibliotecas e frameworks que eu uso com frequencia
-              ou ja usei alguma vez.
+          <p>
+            Nesta seção eu separei todas <span>(</span>que eu lembro pelo menos
+            <span>)</span> as bibliotecas e frameworks que eu uso com frequencia
+            ou ja usei alguma vez.
+          </p>
+          <div className="buttons">
+          <button className="btn--tecnologias">Maior Frequencia</button>
+            <button className="btn--tecnologias">Menor Frequencia</button>
+          </div>
+          <div className="containerTable--tecnologias">
 
-            </p>
+            <div className="table--tecnologias"></div>
+          </div>
         </div>
       </section>
     </>
@@ -142,7 +149,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
-{
-  /* <div> Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"> Smashicons </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div> */
-}

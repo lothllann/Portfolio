@@ -1,5 +1,5 @@
 .mainHome {
-  margin-top: 100px;
+  margin-top: 150px;
   opacity: 0;
   transform: translateX(-50px);
   animation: show 0.5s ease-out forwards;
@@ -50,6 +50,9 @@ right: 0;
 }
 
 @media(max-width: 1400px) {
+  .mainHome{
+    margin-top: 50px;
+  }
   .aboutHome {
     width: 450px;
   }
