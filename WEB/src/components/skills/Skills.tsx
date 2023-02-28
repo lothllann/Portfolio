@@ -135,11 +135,10 @@ const Skills = () => {
             ou ja usei alguma vez.
           </p>
           <div className="buttons">
-          <button className="btn--tecnologias">Maior Frequencia</button>
+            <button className="btn--tecnologias active">Maior Frequencia</button>
             <button className="btn--tecnologias">Menor Frequencia</button>
           </div>
           <div className="containerTable--tecnologias">
-
             <div className="table--tecnologias"></div>
           </div>
         </div>

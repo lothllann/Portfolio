@@ -413,6 +413,8 @@ svg circle:nth-child(2) {
 
 .containerTable--tecnologias{
   flex:1;
+  position: relative;
+  z-index: 1;
   max-width: 70%;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(15px);
@@ -425,6 +427,37 @@ svg circle:nth-child(2) {
   -moz-border-radius: 0px 10px 10px 10px;
   -ms-border-radius: 0px 10px 10px 10px;
   -o-border-radius: 0px 10px 10px 10px;
+}
+
+.btn--tecnologias{
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 0px 10px;
+  min-width: 105px;
+  width: 12%;
+  max-width: 150px;
+  height: calc(0.08 * 100vh);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom-width: 0px ;
+  border-radius: 10px 10px 0px 0px;
+  transition: 0.5s ease-in-out;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -ms-border-radius: 10px 10px 0px 0px;
+  -o-border-radius: 10px 10px 0px 0px;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+}
+
+.btn--tecnologias.active{
+  z-index: 3;
+
+
 }
 
 @media(max-width: 1400px) {
