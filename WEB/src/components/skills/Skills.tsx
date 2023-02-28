@@ -130,7 +130,10 @@ const Skills = () => {
 
         <div className="tecnologias">
           <h1 className="text-4xl font-extrabold mb-5">Tecnologias</h1>
+            <p>Nesta seção eu separei todas (que eu lembro pelo menos) as bibliotecas e frameworks que eu uso com frequencia
+              ou ja usei alguma vez.
 
+            </p>
         </div>
       </section>
     </>
