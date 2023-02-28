@@ -1,18 +1,13 @@
-import pc from "../lottieFiles/computer.json";
+
+import pcw from "../lottieFiles/computerw.json";
 import code from "../lottieFiles/code.json";
 import dev from "../lottieFiles/it-developer.json";
 import book from "../lottieFiles/book.json";
-
 import "./Menu.css";
 import Button from "./buttons/Button";
 import React from "react";
 import Lottie from "lottie-react";
 
-import lottie from 'lottie-web';
-import { defineElement } from 'lord-icon-element';
-
-// define "lord-icon" custom element with default properties
-defineElement(lottie.loadAnimation);
 
 
 
@@ -21,7 +16,7 @@ const ListButtons = [
   {
     nome: "Home",
     path: "/",
-    image:  <Lottie id='firstLottie' animationData={pc} loop={false} style={{width: 50, height: 50}}/>
+    image: <Lottie id='firstLottie' animationData={pcw} loop={false} style={{width: 50, height: 50}}/>
   },
 
   {
@@ -46,7 +41,7 @@ const ListButtons = [
 
 const Menu = () => {
 
-const [animationState, setAnimationState] = React.useState({isStopped: false, isPaused: false})
+
 
   return (
     <div className="menu--container">
@@ -72,6 +67,3 @@ const [animationState, setAnimationState] = React.useState({isStopped: false, is
 };
 
 export default Menu;
-
-
-
