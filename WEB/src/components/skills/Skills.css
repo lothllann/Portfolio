@@ -121,7 +121,7 @@
 
 .linguagensSkills {
   min-height: 100vh;
-  padding-top: 25px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -244,27 +244,27 @@
 
 .card--language:nth-child(1) .title {
   background: #1F62AE;
-  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
 .card--language:nth-child(2) .title {
   background: #F7DF1E;
-  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
 .card--language:nth-child(3) .title {
   background: #E34F26;
-  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
 .card--language:nth-child(4) .title {
   background: #5382A1;
-  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
 .card--language:nth-child(5) .title {
   background: #0076C6;
-  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
 .card--language:hover .title {
@@ -374,8 +374,6 @@ svg circle:nth-child(2) {
     -o-transform: translatex(0px);
 }
 
-
-
 50%{
   opacity: 1;
   transform: translateX(440px);
@@ -394,4 +392,10 @@ svg circle:nth-child(2) {
   -ms-transform: translatex(0px);
   -o-transform: translatex(0px);
 }
+}
+
+
+.tecnologias{
+  padding-top: 50px;
+  height: 100vh;
 }
