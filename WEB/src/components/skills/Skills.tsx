@@ -50,16 +50,17 @@ const Skills = () => {
         description="página que mostra as tecnologias que conheço"
       />
       <section className="mainSkills">
+
         <div className="introSkills">
           <div className="apresentacao">
             <h1 className="text-4xl font-extrabold mb-5">Skills</h1>
 
-            <div>
+            <p>
               Como eu curto mais o <span>Front-End</span> as minhas habilidades
               estão mais concentradas nessa area, porém eu pretendo evoluir mais
               no <span>Back-End</span>.<br /> Eu quero me tornar
               <span> Full-Stack</span> no futuro e fazer apps mobiles também.
-            </div>
+            </p>
           </div>
 
           <div className="bb8">
@@ -84,9 +85,9 @@ const Skills = () => {
             </h1>
 
             <p>
-              Estas são as Linguagens de Programação que eu conheço.
-              <br />A porcentagem tem como base os projetos upados no meu{" "}
-              <a href="https://github.com/lothllann">GitHub</a>.
+              Estas são as Linguagens de Programação que eu conheço.<br/>
+              A porcentagem tem como base os projetos upados no meu
+              <a href="https://github.com/lothllann"> GitHub</a>.
             </p>
           </div>
 

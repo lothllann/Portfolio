@@ -6,7 +6,7 @@ import '@lottiefiles/lottie-player';
 const Portfolio = ()=> {
 
   return (
-    <div>Portfolio</div>
+    <h1 className="text-4xl font-extrabold mb-5">Portfólio</h1>
   )
 }
 
