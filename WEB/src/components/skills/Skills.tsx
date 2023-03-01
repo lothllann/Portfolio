@@ -134,10 +134,12 @@ const Skills = () => {
             <span>)</span> as bibliotecas e frameworks que eu uso com frequencia
             ou ja usei alguma vez.
           </p>
-          <div className="buttons">
-            <button className="btn--tecnologias active">Maior Frequencia</button>
-            <button className="btn--tecnologias">Menor Frequencia</button>
-          </div>
+     
+            <ul className="buttons">
+              <li><button>Mais Usados</button></li>
+              <li><button>Menos Usados</button></li>
+            </ul>
+   
           <div className="containerTable--tecnologias">
             <div className="table--tecnologias"></div>
           </div>
