@@ -138,6 +138,7 @@ const Skills = () => {
             <ul className="buttons">
               <li><button>Mais Usados</button></li>
               <li><button>Menos Usados</button></li>
+              <div id="marker"></div>
             </ul>
    
           <div className="containerTable--tecnologias">
