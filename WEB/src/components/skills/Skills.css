@@ -407,6 +407,14 @@ svg circle:nth-child(2) {
   display: flex;
   border-radius: 10px;
   margin-bottom: 50px;
+  padding: 30px;
+}
+
+.table--tecnologias{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex: 1;
 }
 
 .buttons {
@@ -519,6 +527,8 @@ svg circle:nth-child(2) {
   -ms-transform: translatex(-150%);
   -o-transform: translatex(-150%);
 }
+
+
 
 
 

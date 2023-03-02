@@ -10,6 +10,7 @@ import "../../App.css";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import Lottie from "lottie-react";
 import bb8 from "../lottieFiles/bb8.json";
+import { lessUsed, mostUsed } from "../../utils/tecnologias";
 
 const languagesInfo = [
   {
@@ -44,11 +45,15 @@ const style = {
 
 const Skills = () => {
   const [tecShow, setTecShow] = React.useState(true);
-  const marker = document.querySelector('#marker')
+  const marker = document.querySelector("#marker");
 
-  const trueTec = ()=>{setTecShow(true)}
+  const trueTec = () => {
+    setTecShow(true);
+  };
 
-  const falseTec = ()=>{setTecShow(false)}
+  const falseTec = () => {
+    setTecShow(false);
+  };
 
   return (
     <>
@@ -141,15 +146,30 @@ const Skills = () => {
             <span>)</span> as bibliotecas e frameworks que eu uso com frequencia
             ou ja usei alguma vez.
           </p>
-     
-            <ul className="buttons">
-              <li><button onClick={trueTec}>Mais Usados</button></li>
-              <li><button onClick={falseTec}>Menos Usados</button></li>
-              <div className={`${tecShow ? 'activeLeft': 'activeRight'}`} id="marker"></div>
-            </ul>
-   
+
+          <ul className="buttons">
+            <li>
+              <button onClick={trueTec}>Mais Usados</button>
+            </li>
+            <li>
+              <button onClick={falseTec}>Menos Usados</button>
+            </li>
+            <div
+              className={`${tecShow ? "activeLeft" : "activeRight"}`}
+              id="marker"
+            ></div>
+          </ul>
+
           <div className="containerTable--tecnologias">
-            <div className="table--tecnologias"></div>
+            <div className="table--tecnologias">
+              {`${tecShow ?
+                 mostUsed.map((t, i)=>(
+                  <div key={`${i}-${i}`}></div>
+                 )) :
+                  lessUsed.map((t, i)=>(
+                    <div key={`${i}-${i}`}></div>
+                  ))}`}
+            </div>
           </div>
         </div>
       </section>
