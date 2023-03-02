@@ -46,12 +46,9 @@ const Skills = () => {
   const [tecShow, setTecShow] = React.useState(true);
   const marker = document.querySelector('#marker')
 
-  const handleTec = ()=>{
-    
-    setTecShow(!tecShow)
-    
+  const trueTec = ()=>{setTecShow(true)}
 
-  }
+  const falseTec = ()=>{setTecShow(false)}
 
   return (
     <>
@@ -146,9 +143,9 @@ const Skills = () => {
           </p>
      
             <ul className="buttons">
-              <li><button onClick={handleTec} className={`${tecShow ? 'activeLeft': ''}`}>Mais Usados</button></li>
-              <li><button onClick={handleTec} className={`${!tecShow ? 'activeRight': ''}`}>Menos Usados</button></li>
-              <div id="marker"></div>
+              <li><button onClick={trueTec}>Mais Usados</button></li>
+              <li><button onClick={falseTec}>Menos Usados</button></li>
+              <div className={`${tecShow ? 'activeLeft': 'activeRight'}`} id="marker"></div>
             </ul>
    
           <div className="containerTable--tecnologias">
