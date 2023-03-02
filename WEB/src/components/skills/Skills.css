@@ -466,8 +466,8 @@ svg circle:nth-child(2) {
 #marker {
   position: absolute;
   top: 0;
-  width: 47px;
-  height: 47px;
+  width: 45px;
+  height: 45px;
   z-index: 1;
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -483,10 +483,10 @@ svg circle:nth-child(2) {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 55px;
-  height: 55px;
-  background: #29fd53;
-  box-shadow: 0 0 15px #29fd53, 0 0 30px #29fd53, 0 0 45px #29fd53, 0 0 60px #29fd53;
+  width: 72px;
+  height: 50px;
+  background: #581c71;
+  box-shadow: 0 0 15px #581c71, 0 0 30px #581c71, 0 0 45px #581c71, 0 0 60px #581c71;
   border-radius: 40% ;
   transition: 0.5s;
   transform: translate(-50%,-50%);
@@ -501,7 +501,7 @@ svg circle:nth-child(2) {
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
-  -o-transition: 0.5s;
+  -o-transition: 0.5s; 
 }
 
 .activeRight {
