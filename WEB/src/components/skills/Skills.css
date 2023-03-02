@@ -448,7 +448,8 @@ svg circle:nth-child(2) {
 .buttons li button {
   position: relative;
   font-size: 1rem;
-  padding: 10px 20px;
+  width: 150px;
+  height: 45px;
   font-weight: 500;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
@@ -492,6 +493,8 @@ svg circle:nth-child(2) {
   -o-transition: 0.5s;
 }
 
+
+
 #marker::before{
   content: '';
   position: absolute;
@@ -516,6 +519,10 @@ svg circle:nth-child(2) {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+}
+
+.buttons:nth-child(1).activeLeft~#marker{
+left: 5%;
 }
 
 

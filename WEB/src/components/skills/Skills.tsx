@@ -43,6 +43,16 @@ const style = {
 };
 
 const Skills = () => {
+  const [tecShow, setTecShow] = React.useState(true);
+  const marker = document.querySelector('#marker')
+
+  const handleTec = ()=>{
+    
+    setTecShow(!tecShow)
+    
+
+  }
+
   return (
     <>
       <Head
@@ -136,8 +146,8 @@ const Skills = () => {
           </p>
      
             <ul className="buttons">
-              <li><button>Mais Usados</button></li>
-              <li><button>Menos Usados</button></li>
+              <li><button onClick={handleTec} className={`${tecShow ? 'activeLeft': ''}`}>Mais Usados</button></li>
+              <li><button onClick={handleTec} className={`${!tecShow ? 'activeRight': ''}`}>Menos Usados</button></li>
               <div id="marker"></div>
             </ul>
    
