@@ -40,18 +40,20 @@
 
 .menu .indicator{
   position: absolute;
+  z-index: 2;
   top: -3.5%;
   left: 78%;
   width: 80px;
   height: 80px;
   background: #581C71;
+  backdrop-filter: blur(15px);
   border-radius: 50%;
+  border: 8px solid #1C1C1C;
+  transition: all 0.5s;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  border: 8px solid #1C1C1C;
-  transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -68,6 +70,7 @@
   border-bottom-right-radius: 55px;
   box-shadow: 10px 0 0 0 #1C1C1C;
 }
+
 .indicator::after{
   content: '';
   position:absolute;
@@ -78,4 +81,39 @@
   background: transparent;
   border-top-right-radius: 55px;
   box-shadow: 10px 0 0 0 #1C1C1C;
+}
+
+.menu .light{
+  position: absolute;
+  z-index: 3;
+  width: 35px;
+  height: 55px;
+  top: 0px;
+  right: -50px;
+  border-radius: 50%;
+  transition: 0.5s;
+  box-shadow: 10px 0 25px #581C71, 12px 0 50px #581C71, 14px 0 75px #581C71;
+  background-color: #581C71;
+  animation: lightSaber 1s infinite;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-animation: lightSaber 2s infinite;
+}
+
+@keyframes lightSaber {
+  0%{
+    box-shadow: 10px 0 25px #581C71, 12px 0 50px #581C71, 14px 0 75px #581C71;
+  }
+  50%{
+    box-shadow: 5px 0 30px #581C71, 6px 0 65px #581C71, 7px 0 80px #581C71;
+  }
+  100%{
+    box-shadow: 10px 0 25px #581C71, 12px 0 50px #581C71, 14px 0 75px #581C71;
+  }
 }

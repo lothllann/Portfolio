@@ -60,6 +60,7 @@ const Menu = () => {
             );
           })}
           <div className="indicator"></div>
+          <div className="light"></div>
         </nav>
       </div>
     </div>

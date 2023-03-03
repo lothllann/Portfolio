@@ -13,7 +13,7 @@
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-  z-index: 3;
+  z-index: 4;
 }
 
 
@@ -58,7 +58,8 @@
 
 
 
-.navlink:nth-child(2).active~.indicator {
+.navlink:nth-child(2).active~.indicator,
+.navlink:nth-child(2).active~.light {
   transform: translateY(calc(87px * 1));
   -webkit-transform: translateY(calc(87px * 1));
   -moz-transform: translateY(calc(87px * 1));
@@ -66,11 +67,13 @@
   -o-transform: translateY(calc(87px * 1));
 }
 
-.navlink:nth-child(3).active~.indicator {
+.navlink:nth-child(3).active~.indicator,
+.navlink:nth-child(3).active~.light {
   transform: translateY(calc(86px * 2));
 }
 
-.navlink:nth-child(4).active~.indicator {
+.navlink:nth-child(4).active~.indicator,
+.navlink:nth-child(4).active~.light {
   transform: translateY(calc(86px * 3));
   -webkit-transform: translateY(calc(86px * 3));
   -moz-transform: translateY(calc(86px * 3));
