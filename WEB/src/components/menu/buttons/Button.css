@@ -46,6 +46,9 @@
   -moz-transform: translate(-5px, 12px);
   -ms-transform: translate(-5px, 12px);
   -o-transform: translate(-5px, 12px);
+
+
+  
 }
 
 .navlink.active .navlink--img {
