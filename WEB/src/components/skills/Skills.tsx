@@ -149,10 +149,10 @@ const Skills = () => {
 
           <ul className="buttons">
             <li>
-              <button onClick={trueTec}>Mais Usados</button>
+              <button onClick={trueTec}>Recentes</button>
             </li>
             <li>
-              <button onClick={falseTec}>Menos Usados</button>
+              <button onClick={falseTec}>Já Usados</button>
             </li>
             <div
               className={`${tecShow ? "activeLeft" : "activeRight"}`}
