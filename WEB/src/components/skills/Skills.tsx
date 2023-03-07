@@ -10,7 +10,7 @@ import "../../App.css";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import Lottie from "lottie-react";
 import bb8 from "../lottieFiles/bb8.json";
-import { lessUsed, mostUsed } from "../../utils/tecnologias";
+import { all, recentes } from "../../utils/tecnologias";
 
 const languagesInfo = [
   {
@@ -62,7 +62,7 @@ const Skills = () => {
         description="página que mostra as tecnologias que conheço"
       />
       <section className="mainSkills">
-        <div className="introSkills">
+        <section className="introSkills">
           <div className="apresentacao">
             <h1 className="text-4xl font-extrabold mb-5">Skills</h1>
 
@@ -86,9 +86,9 @@ const Skills = () => {
               <KeyboardArrowDownRoundedIcon sx={{ fontSize: 70 }} />
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className="linguagensSkills">
+        <section className="linguagensSkills">
           <div className="text--languages">
             <h1 className="text-4xl font-extrabold mb-5">
               Linguagens de Programação
@@ -137,9 +137,9 @@ const Skills = () => {
               <KeyboardArrowDownRoundedIcon sx={{ fontSize: 70 }} />
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className="tecnologias">
+        <section className="tecnologias">
           <h1 className="text-4xl font-extrabold mb-5">Tecnologias</h1>
           <p>
             Nesta seção eu separei todas <span>(</span>que eu lembro pelo menos
@@ -163,15 +163,19 @@ const Skills = () => {
           <div className="containerTable--tecnologias">
             <div className="table--tecnologias">
               {`${tecShow ?
-                 mostUsed.map((t, i)=>(
-                  <div key={`${i}-${i}`}></div>
+                 recentes.map((t, i)=>(
+                  <div key={`${i}-${i}`} className='tec-icon'>
+                     
+                  </div>  
                  )) :
-                  lessUsed.map((t, i)=>(
-                    <div key={`${i}-${i}`}></div>
+                  all.map((t, i)=>(
+                    <div key={`${i}-${i}`} className='tec-icon'>
+                      <img src={t.srcImg} alt="icone da biblioteca" />
+                    </div>
                   ))}`}
             </div>
           </div>
-        </div>
+        </section>
       </section>
     </>
   );
