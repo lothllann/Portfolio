@@ -79,4 +79,3 @@ export const all = [
 
 export const recentes = all.filter((i)=> i.recente === true)
 
-console.log(recentes)
