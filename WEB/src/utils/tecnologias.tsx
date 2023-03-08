@@ -12,9 +12,6 @@ import prisma from "../assets/prisma.png";
 import radixUi from "../assets/radix.png";
 
 
-export const recentes = [
-
-];
 
 export const all = [
   {
@@ -78,3 +75,8 @@ export const all = [
     recente: false,
   },
 ];
+
+
+export const recentes = all.filter((i)=> i.recente === true)
+
+console.log(recentes)

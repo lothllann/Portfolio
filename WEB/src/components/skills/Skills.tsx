@@ -170,8 +170,8 @@ const Skills = () => {
               {
                 tecShow
                   ? recentes.map((t) => (
-                    <div key={t} className="tec-icon">
-                      <img src={t} alt="icone da biblioteca" />
+                    <div key={t.name} className="tec-icon">
+                      <img src={t.srcImg} alt="icone da biblioteca" />
                     </div>
                   ))
                   : all.map((t, i) => (
