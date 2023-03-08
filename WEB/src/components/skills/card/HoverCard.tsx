@@ -18,7 +18,7 @@ const HoverCardElement = ({
     <HoverCard.Root>
       <HoverCard.Trigger asChild>
         <a
-          className="scale-0 animate-showUp bg-blackGlass border-greyGlass2 border-2 border-solid h-[100px] w-[100px] xl:h-[75px] xl:w-[75px] xl:p-2 rounded-lg p-3 flex justify-center align-middle cursor-pointer shadow-[0_5px_15px_rgba(0,0,0,0.2)] transition-all ease-out hover:bg-greyGlass3 "
+          className="scale-0 animate-showUp bg-blackGlass border-greyGlass2 border-2 border-solid h-[100px] w-[100px] max-[1400px]:h-[75px] max-[1400px]:w-[75px] xl:p-2 rounded-lg p-3 flex justify-center align-middle cursor-pointer shadow-[0_5px_15px_rgba(0,0,0,0.2)] transition-all ease-out hover:bg-greyGlass3 "
           href={link}
           target="_blank"
           rel="noreferrer noopener"
@@ -29,7 +29,7 @@ const HoverCardElement = ({
 
       <HoverCard.Portal>
         <HoverCard.Content
-          className="w-[300px]  p-5 shadow-[0_5px_15px_rgba(0,0,0,0.2)]  bg-greyGlass1 backdrop-blur-lg  rounded-md animate-slideUpAndFade data-[state=open]:transition-all"
+          className="relative z-50 w-[300px]  p-5 shadow-[0_5px_15px_rgba(0,0,0,0.2)]  bg-greyGlass1 backdrop-blur-lg  rounded-md animate-slideUpAndFade data-[state=open]:transition-all"
           sideOffset={5}
         >
           <div className="flex flex-col gap-[7px]">
@@ -45,7 +45,7 @@ const HoverCardElement = ({
               </div>
             </div>
           </div>
-          <HoverCard.Arrow className="fill-greyGlass1" />
+          <HoverCard.Arrow className="fill-greyGlass1 relative z-50" />
         </HoverCard.Content>
       </HoverCard.Portal>
     </HoverCard.Root>
