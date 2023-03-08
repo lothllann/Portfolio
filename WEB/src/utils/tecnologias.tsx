@@ -17,62 +17,97 @@ export const all = [
   {
     name: "React",
     srcImg: react,
+    socialMedia: '',
+    about: '',
+    socialMediaLink:'',
     recente: true,
   },
   {
     name: "React Native",
     srcImg: reactNative,
     recente: false,
+        socialMedia: '',
+    socialMediaLink:'',
+        about: '',
   },
   {
     name: "Lottie",
     srcImg: lottie,
     recente: true,
-  },
+
+    socialMediaLink:'',
+    socialMedia: '',
+    about: '',  },
   {
     name: "TailWind",
     srcImg: tailWind,
     recente: true,
-  },
+
+    socialMediaLink:'',
+    socialMedia: '',
+    about: '',  },
   {
     name: "PostCss",
     srcImg: postCss,
     recente: true,
-  },
+
+    socialMediaLink:'',
+    socialMedia: '',
+    about: '',  },
   {
     name: "Node.js",
     srcImg: node,
     recente: false,
+        socialMedia: '',
+    socialMediaLink:'',
+        about: '',
   },
   {
     name: "Phosphor",
     srcImg: phosphor,
     recente: true,
-  },
+
+    socialMediaLink:'',
+    socialMedia: '',
+    about: '',  },
   {
     name: "Materials-Icon",
     srcImg: materialIcons,
     recente: true,
-  },
+
+    socialMediaLink:'',
+    socialMedia: '',
+    about: '',  },
   {
     name: "Zod",
     srcImg: zod,
     recente: false,
+        socialMedia: '',
+    socialMediaLink:'',
+        about: '',
   },
   {
     name: "Prisma",
     srcImg: prisma,
     recente: false,
+        socialMedia: '',
+    socialMediaLink:'',
+        about: '',
   },
   {
     name: "Radix.Ui",
     srcImg: radixUi,
     recente: true,
-  },
+    socialMedia: '@radix_ui',
+    socialMediaLink:'',
+    about: 'Componentes, ícones, cores e modelos para criar interfaces de usuário acessíveis e de alta qualidade. Gratuito e de código aberto.',  },
   {
     name: "Day.js",
     srcImg: dayjs,
     recente: false,
+    socialMedia: '',
+    socialMediaLink:'',
+    about: '',
   },
 ];
 

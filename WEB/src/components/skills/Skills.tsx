@@ -137,10 +137,12 @@ const Skills = () => {
               {
                 tecShow
                   ? recentes.map((t) => (
-                      <HoverCard key={t.name} name={t.name} srcImg={t.srcImg}/>
+                      <HoverCard key={t.name} name={t.name} srcImg={t.srcImg} about={t.about} socialMedia={t.socialMedia} socialMediaLink={t.socialMediaLink}/>
                   ))
-                  : all.map((t) => (
-                    <HoverCard key={t.name} name={t.name} srcImg={t.srcImg}/>
+                  : all.map((t, i) => (
+                      <div key={`${t.name}-${i}`} className="tec-icon">
+                        <img src={t.srcImg} alt="icone da biblioteca" />
+                      </div>
                     ))
               }
             </div>

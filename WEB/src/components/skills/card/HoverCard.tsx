@@ -2,7 +2,10 @@ import React from 'react'
 
 interface CardProps {
 name: string,
-srcImg: string
+srcImg: string,
+about: string,
+socialMedia: string,
+socialMediaLink: string
 }
 
 const HoverCard = ({name, srcImg}:CardProps) => {
