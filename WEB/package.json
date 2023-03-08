@@ -15,6 +15,7 @@
     "@lottiefiles/lottie-player": "^1.7.1",
     "@mui/icons-material": "^5.11.9",
     "@mui/material": "^5.11.10",
+    "@radix-ui/react-hover-card": "^1.0.5",
     "babel-runtime": "^6.26.0",
     "clsx": "^1.2.1",
     "lord-icon-element": "^4.0.3",

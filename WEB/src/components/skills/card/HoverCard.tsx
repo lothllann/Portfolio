@@ -1,18 +1,55 @@
-
+import * as HoverCard from "@radix-ui/react-hover-card";
 interface CardProps {
-name: string,
-srcImg: string,
-about: string,
-socialMedia: string,
-socialMediaLink: string
+  name: string;
+  srcImg: string;
+  about: string;
+  socialMedia: string;
+  link: string;
 }
 
-const HoverCard = ({name, srcImg, about, socialMedia, socialMediaLink}:CardProps) => {
+const HoverCardElement = ({
+  name,
+  srcImg,
+  about,
+  socialMedia,
+  link,
+}: CardProps) => {
   return (
-    <div key={name} className="tec-icon">
-    <img src={srcImg} alt="icone da biblioteca" />
-  </div>
-  )
-}
+    <HoverCard.Root>
+      <HoverCard.Trigger asChild>
+        <a
+          className="scale-0 animate-showUp bg-blackGlass border-greyGlass2 border-2 border-solid h-[100px] w-[100px] xl:h-[75px] xl:w-[75px] xl:p-2 rounded-lg p-3 flex justify-center align-middle cursor-pointer shadow-[0_5px_15px_rgba(0,0,0,0.2)] transition-all ease-out hover:bg-greyGlass3 "
+          href={link}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img className="rounded-xl" src={srcImg} alt={`icone do ${name}`} />
+        </a>
+      </HoverCard.Trigger>
 
-export default HoverCard
+      <HoverCard.Portal>
+        <HoverCard.Content
+          className="w-[300px]  p-5 shadow-[0_5px_15px_rgba(0,0,0,0.2)]  bg-greyGlass1 backdrop-blur-lg  rounded-md animate-slideUpAndFade data-[state=open]:transition-all"
+          sideOffset={5}
+        >
+          <div className="flex flex-col gap-[7px]">
+            <img
+              className="rounded-xl bolck h-[110px] w-[110px]"
+              src={srcImg}
+              alt={`icone do ${name}`}
+            />
+            <div className="flex flex-col gap-[15px]">
+              <div>
+                <div className="text-white m-0 text-[15px] font-medium leading-[1.5]">{name}</div>
+                <div className="text-gray-400 m-0 text-[15px] leading-[1.5]">{socialMedia}</div>
+              </div>
+            </div>
+          </div>
+          <HoverCard.Arrow className="fill-greyGlass1" />
+        </HoverCard.Content>
+      </HoverCard.Portal>
+    </HoverCard.Root>
+  );
+};
+
+export default HoverCardElement;

@@ -6,9 +6,8 @@ import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownR
 import Lottie from "lottie-react";
 import bb8 from "../lottieFiles/bb8.json";
 import { all, recentes } from "../../utils/tecnologias";
-import {languagesInfo} from "../../utils/linguagens"
-import HoverCard from "./card/HoverCard";
-
+import { languagesInfo } from "../../utils/linguagens";
+import HoverCardElement from "./card/HoverCard";
 
 const style = {
   height: 0.5 * window.innerHeight,
@@ -17,7 +16,6 @@ const style = {
 const Skills = () => {
   const [tecShow, setTecShow] = React.useState(true);
   const marker = document.querySelector("#marker");
-  
 
   const trueTec = () => {
     setTecShow(true);
@@ -115,8 +113,8 @@ const Skills = () => {
           <h1 className="text-4xl font-extrabold mb-5">Tecnologias</h1>
           <p>
             Nesta seção separei todas <span>(</span>que me lembro pelo menos
-            <span>)</span> as bibliotecas e frameworks que uso com frequencia
-            ou ja usei alguma vez.
+            <span>)</span> as bibliotecas e frameworks que uso com frequencia ou
+            ja usei alguma vez.
           </p>
 
           <ul className="buttons">
@@ -134,17 +132,27 @@ const Skills = () => {
 
           <div className="containerTable--tecnologias">
             <div className="table--tecnologias">
-              {
-                tecShow
-                  ? recentes.map((t) => (
-                      <HoverCard key={t.name} name={t.name} srcImg={t.srcImg} about={t.about} socialMedia={t.socialMedia} socialMediaLink={t.socialMediaLink}/>
+              {tecShow
+                ? recentes.map((t) => (
+                    <HoverCardElement
+                      key={t.name}
+                      name={t.name}
+                      srcImg={t.srcImg}
+                      about={t.about}
+                      socialMedia={t.socialMedia}
+                      link={t.link}
+                    />
                   ))
-                  : all.map((t, i) => (
-                      <div key={`${t.name}-${i}`} className="tec-icon">
-                        <img src={t.srcImg} alt="icone da biblioteca" />
-                      </div>
-                    ))
-              }
+                : all.map((t, i) => (
+                  <HoverCardElement
+                  key={t.name}
+                  name={t.name}
+                  srcImg={t.srcImg}
+                  about={t.about}
+                  socialMedia={t.socialMedia}
+                  link={t.link}
+                />
+                  ))}
             </div>
           </div>
         </section>

@@ -407,7 +407,7 @@ svg circle:nth-child(2) {
   display: flex;
   border-radius: 10px;
   margin-bottom: 50px;
-  padding: 30px;
+  padding: 30px 25px;
 }
 
 .table--tecnologias {
@@ -419,75 +419,29 @@ svg circle:nth-child(2) {
 
 
 .tec-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: 0.1s ease-out;
   transform: scale(0);
   animation: ShowUp 0.9s forwards;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  cursor: pointer;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  -webkit-transition: 0.1s ease-out;
-  -moz-transition: 0.1s ease-out;
-  -ms-transition: 0.1s ease-out;
-  -o-transition: 0.1s ease-out;
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  -webkit-animation: ShowUp 0.9s forwards;
 }
-.tec-icon img {
-  border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
-}
-
 
 
 @keyframes ShowUp {
   0% {
     transform: scale(0);
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
+
   }
 
   50% {
     transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
+
 }
 
   100% {
     transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
   }
 
 }
 
-
-.tec-icon:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
 
 
 .buttons {
@@ -503,7 +457,7 @@ svg circle:nth-child(2) {
   position: relative;
   justify-content: center;
   align-items: center;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
 
 }
 
