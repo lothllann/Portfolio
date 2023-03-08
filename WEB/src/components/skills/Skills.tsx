@@ -12,6 +12,8 @@ import Lottie from "lottie-react";
 import bb8 from "../lottieFiles/bb8.json";
 import { all, recentes } from "../../utils/tecnologias";
 
+import react from "../../assets/react.png";
+
 const languagesInfo = [
   {
     title: "CSS",
@@ -43,9 +45,12 @@ const style = {
   height: 0.5 * window.innerHeight,
 };
 
+
+
 const Skills = () => {
   const [tecShow, setTecShow] = React.useState(true);
   const marker = document.querySelector("#marker");
+  
 
   const trueTec = () => {
     setTecShow(true);
@@ -162,17 +167,19 @@ const Skills = () => {
 
           <div className="containerTable--tecnologias">
             <div className="table--tecnologias">
-              {`${tecShow ?
-                 recentes.map((t, i)=>(
-                  <div key={`${i}-${i}`} className='tec-icon'>
-                     
-                  </div>  
-                 )) :
-                  all.map((t, i)=>(
-                    <div key={`${i}-${i}`} className='tec-icon'>
-                      <img src={t.srcImg} alt="icone da biblioteca" />
+              {
+                tecShow
+                  ? recentes.map((t) => (
+                    <div key={t} className="tec-icon">
+                      <img src={t} alt="icone da biblioteca" />
                     </div>
-                  ))}`}
+                  ))
+                  : all.map((t, i) => (
+                      <div key={`${t.name}-${i}`} className="tec-icon">
+                        <img src={t.srcImg} alt="icone da biblioteca" />
+                      </div>
+                    ))
+              }
             </div>
           </div>
         </section>
