@@ -2,7 +2,7 @@ import react from "../assets/react.png";
 import reactNative from "../assets/react-native.png";
 import tailWind from "../assets/tailwindcss-icon.svg";
 import lottie from "../assets/lottie.png";
-import postCss from "../assets/postCSS.png";
+import postCss from "../assets/PostCSS.png";
 import node from "../assets/nodejs.png";
 import phosphor from "../assets/phosphor.png";
 import materialIcons from "../assets/material-icon.png";
@@ -52,7 +52,7 @@ export const all = [
   {
     name: "Materials-Icon",
     srcImg: materialIcons,
-    recente: false,
+    recente: true,
   },
   {
     name: "Zod",
@@ -67,7 +67,7 @@ export const all = [
   {
     name: "Radix.Ui",
     srcImg: radixUi,
-    recente: false,
+    recente: true,
   },
   {
     name: "Day.js",

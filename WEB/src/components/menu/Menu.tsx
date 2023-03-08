@@ -1,47 +1,8 @@
-
-import pcw from "../lottieFiles/computerw.json";
-import code from "../lottieFiles/code.json";
-import dev from "../lottieFiles/it-developer.json";
-import book from "../lottieFiles/book.json";
 import "./Menu.css";
 import Button from "./buttons/Button";
-import React from "react";
-import Lottie from "lottie-react";
-
-
-
-
-
-const ListButtons = [
-  {
-    nome: "Home",
-    path: "/",
-    image: <Lottie id='firstLottie' animationData={pcw} loop={false} style={{width: 50, height: 50}}/>
-  },
-
-  {
-    nome: "Works",
-    path: "/port",
-    image: <Lottie animationData={book} loop={false} style={{width: 50, height: 50}}/>,
-  },
-
-  {
-    nome: "Skills",
-    path: "/skills",
-    image: <Lottie animationData={code} loop={false} style={{width: 50, height: 50}}/>,
-  },
-
-  {
-    nome: "About",
-    path: "/sobre",
-    image: <Lottie animationData={dev} loop={false} style={{width: 50, height: 50}}/>,
-  },
-
-];
+import {ListButtons} from "../../utils/botoes"
 
 const Menu = () => {
-
-
 
   return (
     <div className="menu--container">

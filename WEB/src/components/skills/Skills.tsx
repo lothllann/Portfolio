@@ -1,51 +1,18 @@
 import React from "react";
 import Head from "../helper/Head";
-import css from "../../assets/css.svg";
-import js from "../../assets/js.svg";
-import html from "../../assets/html.svg";
-import java from "../../assets/java.svg";
-import ts from "../../assets/ts.svg";
 import "./Skills.css";
 import "../../App.css";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import Lottie from "lottie-react";
 import bb8 from "../lottieFiles/bb8.json";
 import { all, recentes } from "../../utils/tecnologias";
+import {languagesInfo} from "../../utils/linguagens"
+import HoverCard from "./card/HoverCard";
 
-import react from "../../assets/react.png";
 
-const languagesInfo = [
-  {
-    title: "CSS",
-    image: css,
-    percentage: 28,
-  },
-  {
-    title: "JavaScript",
-    image: js,
-    percentage: 24,
-  },
-  {
-    title: "HTML",
-    image: html,
-    percentage: 21,
-  },
-  {
-    title: "Java",
-    image: java,
-    percentage: 15,
-  },
-  {
-    title: "TypeScript",
-    image: ts,
-    percentage: 10,
-  },
-];
 const style = {
   height: 0.5 * window.innerHeight,
 };
-
-
 
 const Skills = () => {
   const [tecShow, setTecShow] = React.useState(true);
@@ -170,14 +137,10 @@ const Skills = () => {
               {
                 tecShow
                   ? recentes.map((t) => (
-                    <div key={t.name} className="tec-icon">
-                      <img src={t.srcImg} alt="icone da biblioteca" />
-                    </div>
+                      <HoverCard key={t.name} name={t.name} srcImg={t.srcImg}/>
                   ))
-                  : all.map((t, i) => (
-                      <div key={`${t.name}-${i}`} className="tec-icon">
-                        <img src={t.srcImg} alt="icone da biblioteca" />
-                      </div>
+                  : all.map((t) => (
+                    <HoverCard key={t.name} name={t.name} srcImg={t.srcImg}/>
                     ))
               }
             </div>

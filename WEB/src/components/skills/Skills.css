@@ -447,6 +447,13 @@ svg circle:nth-child(2) {
   -o-transform: scale(0);
   -webkit-animation: ShowUp 0.9s forwards;
 }
+.tec-icon img {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
 
 
 
