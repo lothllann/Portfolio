@@ -34,7 +34,7 @@ const HoverCardElement = ({
         >
           <div className="flex flex-col gap-[7px]">
             <img
-              className="rounded-xl bolck h-[110px] w-[110px]"
+              className="rounded-xl bolck h-[80px] w-[80px]"
               src={srcImg}
               alt={`icone do ${name}`}
             />
@@ -43,9 +43,10 @@ const HoverCardElement = ({
                 <div className="text-white m-0 text-[15px] font-medium leading-[1.5]">{name}</div>
                 <div className="text-gray-400 m-0 text-[15px] leading-[1.5]">{socialMedia}</div>
               </div>
+              <div className="text-white m-0 text-[13px] font-bold leading-[1.5]">{about}</div>
             </div>
           </div>
-          <HoverCard.Arrow className="fill-greyGlass1 relative z-50" />
+          <HoverCard.Arrow className="fill-greyGlass1 relative z-50 h-2 w-4 " height={5} />
         </HoverCard.Content>
       </HoverCard.Portal>
     </HoverCard.Root>
