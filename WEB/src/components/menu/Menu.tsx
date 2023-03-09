@@ -5,7 +5,7 @@ import {ListButtons} from "../../utils/botoes"
 const Menu = () => {
 
   return (
-    <div className="menu--container">
+    <section className="menu--container">
 
       <div className="menu--background">
         <nav className="menu">
@@ -24,7 +24,7 @@ const Menu = () => {
           <div className="light"></div>
         </nav>
       </div>
-    </div>
+    </section>
   );
 };
 

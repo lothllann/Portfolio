@@ -1,0 +1,9 @@
+.mainPortfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro--portfolio{
+margin-top: 150px;
+}

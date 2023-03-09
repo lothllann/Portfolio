@@ -31,7 +31,7 @@ const Skills = () => {
         title="Skills"
         description="página que mostra as tecnologias que conheço"
       />
-      <section className="mainSkills">
+      <main className="mainSkills">
         <section className="introSkills">
           <div className="apresentacao">
             <h1 className="text-4xl font-extrabold mb-5">Skills</h1>
@@ -156,7 +156,7 @@ const Skills = () => {
             </div>
           </div>
         </section>
-      </section>
+      </main>
     </>
   );
 };

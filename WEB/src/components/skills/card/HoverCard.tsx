@@ -34,7 +34,7 @@ const HoverCardElement = ({
         >
           <div className="flex flex-col gap-[7px]">
             <img
-              className="rounded-xl bolck h-[80px] w-[80px]"
+              className="rounded-xl bolck h-[80px] w-[80px] mb-2"
               src={srcImg}
               alt={`icone do ${name}`}
             />

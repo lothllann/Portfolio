@@ -16,7 +16,7 @@ export const all = [
     name: "React",
     srcImg: react,
     socialMedia: "@reactjs",
-    about: "Uma biblioteca JavaScript para criar interfaces de usuário",
+    about: "Uma biblioteca JavaScript para criar interfaces de usuário.",
     link: "https://pt-br.reactjs.org/",
     recente: true,
   },
@@ -26,7 +26,7 @@ export const all = [
     recente: false,
     socialMedia: "@reactnative",
     link: "https://reactnative.dev/",
-    about: "Crie aplicativos nativos para Android, iOS e muito mais usando o React",
+    about: "Crie aplicativos nativos para Android, iOS e muito mais usando o React.",
   },
   {
     name: "Lottie",

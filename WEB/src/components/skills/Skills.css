@@ -417,33 +417,6 @@ svg circle:nth-child(2) {
 }
 
 
-
-.tec-icon {
-  transition: 0.1s ease-out;
-  transform: scale(0);
-  animation: ShowUp 0.9s forwards;
-}
-
-
-@keyframes ShowUp {
-  0% {
-    transform: scale(0);
-
-  }
-
-  50% {
-    transform: scale(1.1);
-
-}
-
-  100% {
-    transform: scale(1);
-  }
-
-}
-
-
-
 .buttons {
   max-width: 70%;
   display: flex;
@@ -563,14 +536,6 @@ svg circle:nth-child(2) {
   -ms-transform: translatex(-150%);
   -o-transform: translatex(-150%);
 }
-
-
-
-
-
-
-
-
 
 @media(max-width: 1400px) {
   .mainSkills {
