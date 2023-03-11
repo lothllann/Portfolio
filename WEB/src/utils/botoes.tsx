@@ -30,3 +30,23 @@ export const ListButtons = [
   },
 
 ];
+
+
+export const portButtons = [
+  {
+    name: 'Front-End',
+    path: '/port/front'
+  },
+  {
+    name: 'Back-End',
+    path: '/port/back'
+  },
+  {
+    name: 'Full-Stack',
+    path: '/port/fstack'
+  },
+  {
+    name: 'Mobile',
+    path: '/port/mobile'
+  }
+]
