@@ -24,7 +24,7 @@ const Portfolio = ()=> {
     <main className='mainPortfolio'>
       <section className='intro--portfolio'>
       <h1 className="text-4xl font-extrabold mb-5" >Portfólio</h1>
-      <div>
+      <div className='flex justify-around align-middle mt-[150px] w-[100%]'>
       {
         portButtons.map((btn)=>(
           <NavLink to={btn.path} key={btn.name} className="btnIntro--portfolio">
