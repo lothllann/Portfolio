@@ -46,7 +46,7 @@ export const portButtons = [
     path: '/port/fstack'
   },
   {
-    name: 'Mobile',
+    name: 'Apps Mobile',
     path: '/port/mobile'
   }
 ]

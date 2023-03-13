@@ -15,7 +15,7 @@ function App() {
         <main className="appBody">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/port" element={<Portfolio />} />
+            <Route path="/port/*" element={<Portfolio />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/skills" element={<Skills />} />
           </Routes>

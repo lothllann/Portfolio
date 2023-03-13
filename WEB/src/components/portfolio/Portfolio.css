@@ -26,8 +26,86 @@ flex-direction: column;
   max-width: 350px;
   min-height: 300px;
   height: 20%;
+  transition: all 0.5s ease-out;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
+
+.btnIntro--portfolio h2::before{
+  content: '';
+  display: block;
+  height: 2px;
+  width: 105px;
+  opacity: 0;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  border-radius: 50px;
+  background-color: aliceblue;
+  transition: all 0.2s ease-in;
+  transform: translatey(-40px);
+  -webkit-transform: translatey(-40px);
+  -moz-transform: translatey(-40px);
+  -ms-transform: translatey(-40px);
+  -o-transform: translatey(-40px);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+
+.btnIntro--portfolio h2 {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.btnIntro--portfolio h2::after{
+  content: '';
+  display: block;
+  height: 2px;
+  width: 105px;
+  margin: 0 auto;
+  background-color: aliceblue;
+  opacity: 0;
+  margin-top: 45px;
+  border-radius: 50px;
+  transition: all 0.2s ease-in;
+  transform: translatey(40px);
+  -webkit-transform: translatey(40px);
+  -moz-transform: translatey(40px);
+  -ms-transform: translatey(40px);
+  -o-transform: translatey(40px);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+
+.btnIntro--portfolio:hover{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.btnIntro--portfolio:hover h2::before,
+.btnIntro--portfolio:hover h2::after{
+  opacity: 1;
+   transform: translateY(0);
+   -webkit-transform: translateY(0);
+   -moz-transform: translateY(0);
+   -ms-transform: translateY(0);
+   -o-transform: translateY(0);
+}
+

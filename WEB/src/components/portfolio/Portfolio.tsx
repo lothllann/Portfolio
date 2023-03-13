@@ -1,18 +1,19 @@
 import '@lottiefiles/lottie-player';
+import { Route, Routes } from 'react-router-dom';
 import Head from '../helper/Head';
 import  './Portfolio.css';
 import "../../App.css";
 import { portButtons } from '../../utils/botoes';
 import { NavLink } from 'react-router-dom';
+import { Front_End } from './Front_End';
+import { Back_End } from './Back_End';
+import { Full_Stack } from './Full_Stack';
+import { Mobile } from './Mobile';
 
 
 
 
 const Portfolio = ()=> {
-  const btns: number[] = []
-  for (let i = 1; i <= 4; i++) {
-    btns.push(i)
-  }
   
 
   return (
@@ -24,6 +25,7 @@ const Portfolio = ()=> {
     <main className='mainPortfolio'>
       <section className='intro--portfolio'>
       <h1 className="text-4xl font-extrabold mb-5" >Portfólio</h1>
+
       <div className='flex justify-around align-middle mt-[150px] w-[100%]'>
       {
         portButtons.map((btn)=>(
@@ -34,17 +36,15 @@ const Portfolio = ()=> {
       }
       </div>
 
-      
-
+      <Routes>
+        <Route path='front' element={<Front_End />}/>
+        <Route path='back' element={<Back_End />}/>
+        <Route path='fstack' element={<Full_Stack />}/>
+        <Route path='mobile' element={<Mobile />}/>
+      </Routes>
       </section>
 
-      <section className='projetos--portfolio'>
-
-      </section>
-
-      <footer className='footer'>
-
-      </footer>
+    
     </main>
     </>
 
