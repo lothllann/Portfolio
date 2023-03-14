@@ -153,7 +153,8 @@ opacity: 0;
 }
 
 
-@media (max-width: 1400px){
+
+@media (max-width: 1500px){
   .btnIntro--portfolio{
    width: 160px;
    height: 150px;
@@ -205,4 +206,17 @@ opacity: 0;
   margin-top: 50px;
 
 }
+}
+
+@media (max-width: 1000px){
+  .intro--portfolio > div{
+    display:grid;
+    grid-column: 1fr, 1fr;
+    gap: 15px;
+  }
+
+  .btnIntro--portfolio{
+    
+  }
+
 }
