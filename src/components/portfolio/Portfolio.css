@@ -215,10 +215,12 @@
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
-}
+  }
+
 }
 
 @media (max-width: 1000px) {
+
   .intro--portfolio>div {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -227,6 +229,8 @@
     justify-items: center;
 
   }
+
+
 
   .intro--portfolio {
     margin-bottom: 250px;
@@ -243,7 +247,7 @@
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
-}
+  }
 
 
 

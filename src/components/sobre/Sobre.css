@@ -4,6 +4,8 @@
   justify-content: space-between;
 }
 
+
+
 .mainAbout::-webkit-scrollbar {
   display: none;
 }
@@ -17,7 +19,7 @@
   animation: show 0.5s ease-in forwards;
   padding-top: 0px;
   margin-right: 100px;
-  margin-bottom: 100px;
+  
 }
 
 .about > div {
@@ -322,6 +324,7 @@
 }
 
 @media (max-width: 1150px) {
+
   .mainAbout {
     flex-direction: column;
     flex-wrap: wrap;
@@ -329,10 +332,15 @@
     align-items: center;
   }
 
+  .mainAbout > div {
+    display: none;
+  }
+
   .about {
     margin-right: 0px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
   }
 
   .about h1 {
