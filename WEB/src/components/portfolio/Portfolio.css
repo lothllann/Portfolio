@@ -1,31 +1,46 @@
-.mainPortfolio{
+.mainPortfolio {
   display: flex;
   flex-direction: column;
 }
 
-.intro--portfolio{
-margin-top: 150px;
-width: 100%;
-height: calc(100vh - 150px);
-display: flex;
-align-items: center;
-flex-direction: column;
-}
-
-.btnIntro--portfolio{
+.intro--portfolio {
+  margin-top: 100px;
+  width: 100%;
+  height: calc(100vh - 100px);
   display: flex;
   align-items: center;
+  flex-direction: column;
+
+}
+
+.intro--portfolio p {
+  font-size: 1.3em;
+  min-width: 300px;
+  max-width: 750px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.intro--portfolio p span {
+  font-size: 0.65em;
+  font-style: italic;
+  color: grey;
+}
+
+.btnIntro--portfolio {
+  display: flex;
+  display: relative;
+  z-index: 0;
+  align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(15px);
+  background: #282828;
+  backdrop-filter: blur(50px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
-  min-width: 150px;
   width: 20%;
   max-width: 350px;
-  min-height: 300px;
-  height: 20%;
+  height: 300px;
   transition: all 0.5s ease-out;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -37,8 +52,30 @@ flex-direction: column;
   -o-transition: all 0.5s ease-out;
 }
 
-.btnIntro--portfolio h2::before{
-  content: '';
+.btnIntro--portfolio h2 {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+
+.btnIntro--portfolio:hover h2 {
+  opacity: 1;
+}
+
+.btnIntro--portfolio:hover > div{
+opacity: 0;
+}
+
+
+
+.btnIntro--portfolio h2::before {
+  content: "";
   display: block;
   height: 2px;
   width: 105px;
@@ -48,11 +85,11 @@ flex-direction: column;
   border-radius: 50px;
   background-color: aliceblue;
   transition: all 0.2s ease-in;
-  transform: translatey(-40px);
-  -webkit-transform: translatey(-40px);
-  -moz-transform: translatey(-40px);
-  -ms-transform: translatey(-40px);
-  -o-transform: translatey(-40px);
+  transform: translatey(-60px);
+  -webkit-transform: translatey(-60px);
+  -moz-transform: translatey(-60px);
+  -ms-transform: translatey(-60px);
+  -o-transform: translatey(-60px);
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -63,14 +100,10 @@ flex-direction: column;
   -o-transition: all 0.2s ease-in;
 }
 
-.btnIntro--portfolio h2 {
-  font-weight: 900;
-  font-style: italic;
-  font-size: 1.5rem;
-}
 
-.btnIntro--portfolio h2::after{
-  content: '';
+
+.btnIntro--portfolio h2::after {
+  content: "";
   display: block;
   height: 2px;
   width: 105px;
@@ -80,18 +113,19 @@ flex-direction: column;
   margin-top: 45px;
   border-radius: 50px;
   transition: all 0.2s ease-in;
-  transform: translatey(40px);
-  -webkit-transform: translatey(40px);
-  -moz-transform: translatey(40px);
-  -ms-transform: translatey(40px);
-  -o-transform: translatey(40px);
+  transform: translatey(60px);
+  -webkit-transform: translatey(60px);
+  -moz-transform: translatey(60px);
+  -ms-transform: translatey(60px);
+  -o-transform: translatey(60px);
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
 }
 
-.btnIntro--portfolio:hover{
+.btnIntro--portfolio:hover {
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.5);
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -99,13 +133,69 @@ flex-direction: column;
   -o-transform: scale(1.2);
 }
 
+
+
 .btnIntro--portfolio:hover h2::before,
-.btnIntro--portfolio:hover h2::after{
+.btnIntro--portfolio:hover h2::after {
   opacity: 1;
-   transform: translateY(0);
-   -webkit-transform: translateY(0);
-   -moz-transform: translateY(0);
-   -ms-transform: translateY(0);
-   -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
 }
 
+
+@media (max-width: 1400px){
+  .btnIntro--portfolio{
+   width: 160px;
+   height: 150px;
+  }
+
+  .btnIntro--portfolio h2 {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.btnIntro--portfolio h2::before{
+  height: 1px;
+  width: 55px;
+  transform: translatey(-20px);
+  margin-bottom: 25px;
+  -webkit-transform: translatey(-20px);
+  -moz-transform: translatey(-20px);
+  -ms-transform: translatey(-20px);
+  -o-transform: translatey(-20px);
+}
+.btnIntro--portfolio h2::after{
+  height: 1px;
+  width: 55px;
+  margin-top: 25px;
+  transform: translatey(20px);
+  -webkit-transform: translatey(20px);
+  -moz-transform: translatey(20px);
+  -ms-transform: translatey(20px);
+  -o-transform: translatey(20px);
+}
+
+.btnIntro--portfolio:hover {
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.5);
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+
+.intro--portfolio p span {
+  font-size: 0.85em;
+  font-style: italic;
+  color: grey;
+}
+
+.intro--portfolio {
+  margin-top: 50px;
+
+}
+}

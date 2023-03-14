@@ -54,6 +54,10 @@
   transform: translateY(-50px);
   animation: show 0.6s 0.5s ease-out forwards;
   -webkit-animation: show 0.6s 0.5s ease-out forwards;
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  -o-transform: translateY(-50px);
 }
 
 
@@ -65,7 +69,6 @@
   flex-direction: column;
   position: relative;
   align-self: center;
-
   -webkit-animation: show 0.7s 0.3s ease-out forwards;
   -webkit-transform: translatey(-100px);
   -moz-transform: translatey(-100px);
@@ -542,6 +545,10 @@ svg circle:nth-child(2) {
     margin-top: 50px;
   }
 
+  .mainSkills h1 {
+    margin-bottom: 25px;
+  }
+
   .introSkills {
     height: calc(100vh - 170px);
   }
@@ -556,5 +563,7 @@ svg circle:nth-child(2) {
     height: 50px;
     padding: 5px;
   }
+
+
 
 }

@@ -3,6 +3,10 @@ import code from "../components/lottieFiles/code.json";
 import dev from "../components/lottieFiles/it-developer.json";
 import book from "../components/lottieFiles/book.json";
 import Lottie from "lottie-react";
+import front_end from '../assets/front-end.png'
+import back_end from '../assets/back-end.png'
+import full_stack from '../assets/fullStack.png'
+import mobile from '../assets/mobile.png'
 
 export const ListButtons = [
   {
@@ -35,18 +39,22 @@ export const ListButtons = [
 export const portButtons = [
   {
     name: 'Front-End',
-    path: '/port/front'
+    srcImg: front_end,
+    path: '/port/front',
   },
   {
     name: 'Back-End',
+    srcImg: back_end,
     path: '/port/back'
   },
   {
     name: 'Full-Stack',
+    srcImg: full_stack,
     path: '/port/fstack'
   },
   {
     name: 'Apps Mobile',
+    srcImg: mobile,
     path: '/port/mobile'
   }
 ]
