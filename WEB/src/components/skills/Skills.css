@@ -29,7 +29,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: show 0.5s ease-out forwards;
+  animation: show 0.5s ease-in forwards;
   -webkit-animation: show 0.5s ease-out forwards;
   -webkit-transform: translateY(-50px);
   -moz-transform: translateY(-50px);

@@ -10,7 +10,14 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-
+  opacity: 0;
+  transform: translatey(-50px);
+  animation: show 0.5s ease-in forwards;
+  -webkit-animation: show 0.5s ease-in forwards;
+  -webkit-transform: translatey(-50px);
+  -moz-transform: translatey(-50px);
+  -ms-transform: translatey(-50px);
+  -o-transform: translatey(-50px);
 }
 
 .intro--portfolio p {
