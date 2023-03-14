@@ -11,8 +11,6 @@ import { Full_Stack } from './Full_Stack';
 import { Mobile } from './Mobile';
 
 
-
-
 const Portfolio = ()=> {
   
 
@@ -26,9 +24,10 @@ const Portfolio = ()=> {
       <section className='intro--portfolio'>
       <h1 className="text-4xl font-extrabold mb-[50px]" >Portfólio</h1>
       <p>Aqui os projetos estão separados em 4 grupos, Front-End, Back-End, Full Stack e Mobile.</p>
-      <p><span>obs: por enquanto não tenho nenhum projeto Mobile, porém, já estou trabalhando nisso.</span></p>
+      
+   
 
-      <div className='flex justify-around align-middle mt-[150px] max-[1400px]:mt-[125px]  w-[100%] relative'>
+      <div className='flex flex-1 justify-around mt-[150px] max-[1400px]:mt-[125px] max-[1000px]:mt-[100px] mb-[20%] w-[100%] relative'>
       {
         portButtons.map((btn)=>(
           <NavLink to={btn.path} key={btn.name} className="btnIntro--portfolio">

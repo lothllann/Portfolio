@@ -28,14 +28,11 @@
   margin-top: 10px;
 }
 
-.intro--portfolio p span {
-  font-size: 0.65em;
-  font-style: italic;
-  color: grey;
-}
+
 
 .btnIntro--portfolio {
   display: flex;
+  align-self: flex-end;
   display: relative;
   z-index: 0;
   align-items: center;
@@ -75,8 +72,8 @@
   opacity: 1;
 }
 
-.btnIntro--portfolio:hover > div{
-opacity: 0;
+.btnIntro--portfolio:hover>div {
+  opacity: 0;
 }
 
 
@@ -154,69 +151,100 @@ opacity: 0;
 
 
 
-@media (max-width: 1500px){
-  .btnIntro--portfolio{
-   width: 160px;
-   height: 150px;
+@media (max-width: 1500px) {
+  .btnIntro--portfolio {
+    width: 200px;
+    height: 200px;
   }
 
   .btnIntro--portfolio h2 {
     font-weight: 700;
     font-style: italic;
     font-size: 1.1rem;
-}
-
-.btnIntro--portfolio h2::before{
-  height: 1px;
-  width: 55px;
-  transform: translatey(-20px);
-  margin-bottom: 25px;
-  -webkit-transform: translatey(-20px);
-  -moz-transform: translatey(-20px);
-  -ms-transform: translatey(-20px);
-  -o-transform: translatey(-20px);
-}
-.btnIntro--portfolio h2::after{
-  height: 1px;
-  width: 55px;
-  margin-top: 25px;
-  transform: translatey(20px);
-  -webkit-transform: translatey(20px);
-  -moz-transform: translatey(20px);
-  -ms-transform: translatey(20px);
-  -o-transform: translatey(20px);
-}
-
-.btnIntro--portfolio:hover {
-  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.5);
-  transform: scale(1.3);
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -o-transform: scale(1.3);
-}
-
-.intro--portfolio p span {
-  font-size: 0.85em;
-  font-style: italic;
-  color: grey;
-}
-
-.intro--portfolio {
-  margin-top: 50px;
-
-}
-}
-
-@media (max-width: 1000px){
-  .intro--portfolio > div{
-    display:grid;
-    grid-column: 1fr, 1fr;
-    gap: 15px;
   }
 
-  .btnIntro--portfolio{
-    
+  .btnIntro--portfolio h2::before {
+    height: 1px;
+    width: 55px;
+    transform: translatey(-20px);
+    margin-bottom: 25px;
+    -webkit-transform: translatey(-20px);
+    -moz-transform: translatey(-20px);
+    -ms-transform: translatey(-20px);
+    -o-transform: translatey(-20px);
   }
+
+  .btnIntro--portfolio h2::after {
+    height: 1px;
+    width: 55px;
+    margin-top: 25px;
+    transform: translatey(20px);
+    -webkit-transform: translatey(20px);
+    -moz-transform: translatey(20px);
+    -ms-transform: translatey(20px);
+    -o-transform: translatey(20px);
+  }
+
+  .btnIntro--portfolio:hover {
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.5);
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+  }
+
+  .intro--portfolio p span {
+    font-size: 0.85em;
+    font-style: italic;
+    color: grey;
+  }
+
+  .intro--portfolio {
+    margin-top: 50px;
+
+  }
+}
+
+@media (max-width: 1150px) {
+  .btnIntro--portfolio {
+    transform: scale(1.1);
+    width: 150px;
+    height: 150px;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+}
+
+@media (max-width: 1000px) {
+  .intro--portfolio>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+
+  }
+
+  .intro--portfolio {
+    margin-bottom: 250px;
+  }
+
+  .btnIntro--portfolio {
+    width: 200px;
+    height: 200px;
+  }
+
+  .btnIntro--portfolio:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+
 
 }
