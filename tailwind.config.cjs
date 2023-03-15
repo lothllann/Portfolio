@@ -24,13 +24,17 @@ module.exports = {
           '50%': {transform: 'scale(1.1)'},
           '100%': {transform: 'scale(1)'}
         },
+        slideRight:{
+          'to':{opacity: 1, transform: 'translateX(0)'},
+        },
         slideUpAndFade: {
           '0%': { opacity: 0, transform: 'translateY(2px)' },
           '100%': { opacity: 1, transform: 'translateY(0)' },
         },
       },
       animation:{
-        'showUp': 'showUp 900ms forwards',
+        'showUp': 'showUp 500ms forwards',
+        'slideRight': 'slideRight 900ms forwards',
         'slideUpAndFade': 'slideUpAndFade 500ms cubic-bezier(0.16, 0, 0.13, 1)'
       }
     },

@@ -81,7 +81,7 @@ const Sobre = () => {
         </section>
 
 
-      <div className="absolute bottom-[0px]">
+      <div className="absolute bottom-[0px] translate-x-[-250px] opacity-0 animate-slideRight">
         <Lottie animationData={coffe} style={style} />
       </div>
     </main>
