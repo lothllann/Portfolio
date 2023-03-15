@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
 }
+.mainMobile{
+  opacity: 0;
+  transform: translatey(-50px);
+  animation: show 0.5s ease-in forwards;
+}
 
 .intro--portfolio {
   margin-top: 100px;

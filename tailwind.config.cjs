@@ -13,6 +13,7 @@ module.exports = {
         Instagram: '#E4405F',
         Gmail: '#D14836',
         WhatsApp: '#25D366',
+        ligth_green: '#29fd53',
         blackGlass: 'rgba(0, 0, 0, 0.2)',
         greyGlass1:'rgba(255, 255, 255, 0.05)',
         greyGlass2: 'rgba(255, 255, 255, 0.07)',
