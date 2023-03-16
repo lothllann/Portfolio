@@ -1,7 +1,9 @@
-import React from 'react'
+import space  from "../assets/space.jpg";
 
-export const sites = () => {
-  return (
-    <div>sites</div>
-  )
+export const site =[
+{
+  titulo: 'Space',
+  description:' Um site de teste que mostra uma bolha com uma galaxia dentro',
+  srcImg: space,
 }
+]
