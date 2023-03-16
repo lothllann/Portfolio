@@ -8,10 +8,10 @@ interface Props {
 
 const SiteCard = ({srcImg, title, description}: Props) => {
   return (
-    <div className='card'>
+    <div className='siteCard'>
       <img src={srcImg} alt="space" />
       <div>
-        <h2>{title}</h2>
+        <h1>{title}</h1>
         <p>{description}</p>
         <button>Veja Mais</button>
       </div>
