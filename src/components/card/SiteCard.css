@@ -6,13 +6,13 @@
   display: flex;
   position: relative;
   align-items: center;
+  min-width: 350px ;
   width: 45vw;
   max-width: 650px;
   padding: 40px 30px 40px 20px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: -5px 15px 15px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(15px);
   border-radius: 24px;
   -webkit-border-radius: 24px;
   -moz-border-radius: 24px;
@@ -20,7 +20,7 @@
   -o-border-radius: 24px;
 }
 
-.siteCard img {
+.siteCard > img {
   max-width: 280px;
   width: 28vw;
   height:35vh;
@@ -74,9 +74,19 @@
 }
 
 .siteCard p {
-  font-size: 1.1em;
+  font-size: 1.0em;
   text-align: justify;
+  
   margin-top: 10px;
+}
+
+.languageSite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 10%;
+  height: 10%;
+  object-fit: cover;
 }
 
 @media (width <=890px) {

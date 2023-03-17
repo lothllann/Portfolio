@@ -9,7 +9,7 @@ export const Front_End = () => {
       <Btn_Back/>
       <h1 className="text-4xl font-extrabold mb-10">Front-End</h1>
       {site.map((i, index)=>(
-        <SiteCard key={index} description={i.description} title={i.titulo} srcImg={i.srcImg}/>
+        <SiteCard key={index} description={i.description} title={i.titulo} srcImg={i.srcImg} featured={i.srcImgFeatured}/>
       ))}
       
     </section>
