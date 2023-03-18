@@ -10,6 +10,8 @@ import zod from "../assets/zod.png";
 import dayjs from "../assets/dayjs.png";
 import prisma from "../assets/prisma.png";
 import radixUi from "../assets/radix.png";
+import vite from "../assets/vite.png";
+
 
 export const all = [
   {
@@ -108,6 +110,14 @@ export const all = [
     socialMedia: "@day_js",
     link: "https://day.js.org/",
     about: "Day.js é uma biblioteca JavaScript minimalista que analisa, valida, manipula e exibe datas e horas.",
+  },
+  {
+    name: "Vite",
+    srcImg: vite,
+    recente: true,
+    socialMedia: "@vite_js",
+    link: "https://vitejs.dev/",
+    about: "Vite é uma ferramenta de compilação que visa fornecer uma experiência de desenvolvimento mais rápida e enxuta para projetos da Web modernos.",
   },
 ];
 

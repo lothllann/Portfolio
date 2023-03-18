@@ -8,6 +8,7 @@ import bb8 from "../lottieFiles/bb8.json";
 import { all, recentes } from "../../utils/tecnologias";
 import { languagesInfo } from "../../utils/linguagens";
 import HoverCardElement from "../card/HoverCard";
+import Footer from "../footer/Footer";
 
 const style = {
   height: 0.5 * window.innerHeight,
@@ -157,6 +158,7 @@ const Skills = () => {
           </div>
         </section>
       </main>
+      <Footer/>
     </>
   );
 };

@@ -10,6 +10,7 @@
   align-items: center;
   min-width: 350px ;
   width: 55vw;
+  height: 372px;
   max-width: 850px;
   padding: 50px 40px 50px 40px;
   background: rgba(255, 255, 255, 0.05);
@@ -23,6 +24,7 @@
 }
 
 .siteCard > img {
+  cursor: pointer;
   max-width: 400px;
   width: 25vw;
   height:30vh;
@@ -31,10 +33,23 @@
   margin-right: 30px;
   box-shadow: -5px 9px 15px rgba(0, 0, 0, 0.5);
   border-radius: inherit;
+  transition: all 0.5s ease-in-out;
   -webkit-border-radius: inherit;
   -moz-border-radius: inherit;
   -ms-border-radius: inherit;
   -o-border-radius: inherit;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.siteCard > img:hover{
+  transform: scale(1.3) translatex(25px) translateY(-25px);
+  -webkit-transform: scale(1.3) translatex(25px) translateY(-25px);
+  -moz-transform: scale(1.3) translatex(25px) translateY(-25px);
+  -ms-transform: scale(1.3) translatex(25px) translateY(-25px);
+  -o-transform: scale(1.3) translatex(25px) translateY(-25px);
 }
 
 .siteCard button {
@@ -78,7 +93,6 @@
 .siteCard p {
   font-size: 1.0em;
   text-align: justify;
-  
   margin-top: 10px;
 }
 
@@ -98,7 +112,9 @@
     margin: 0 40px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 90px;
     width: 100%;
+    height: 372px;
   }
 
   .siteCard img {
@@ -106,4 +122,14 @@
     width: 100%;
     max-width: 1000px;
   }
+
+
+
+  .siteCard > img:hover{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
 }

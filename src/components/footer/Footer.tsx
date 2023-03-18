@@ -1,4 +1,4 @@
-import falcon from '../../assets/millennium-falcon.png'
+import footerImg from '../../assets/darth-vader.png'
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -6,7 +6,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 const Footer = () => {
   return (
     <footer className='mt-[200px] flex flex-col items-center'>
-      <img className='w-[50px] mb-[35px]' src={falcon} alt="separador do footer" />
+      <img className='w-[50px] mb-[25px]' src={footerImg} alt="separador do footer" />
       <h1 className='font-bold'>Siga-me</h1>
       <div className='flex gap-[10px] mt-[15px]'>
         <div className='cursor-pointer hover:scale-125 transition-all'> <a href="https://www.instagram.com/ruupp___/"><InstagramIcon sx={{ fontSize: 40, color: "#E4405F" }}/> </a>  </div>
