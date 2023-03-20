@@ -27,6 +27,7 @@ gap: 150px;
 .mainFront-end.mosaico{
 display: grid;
 grid-template-columns: 1fr 1fr;
+gap: 75px;
 
 }
 

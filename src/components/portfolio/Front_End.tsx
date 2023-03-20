@@ -5,7 +5,7 @@ import Footer from '../footer/Footer'
 import Btn_Back from './Btn_Back'
 
 export const Front_End = () => {
-  const [grid, setGrid] = React.useState('single')
+  const [grid, setGrid] = React.useState('mosaico')
   return (
     <section className='container_Front'>
       <Btn_Back/>
