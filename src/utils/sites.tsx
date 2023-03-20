@@ -9,8 +9,9 @@ import habits from "../assets/habitss.png";
 import robotron from "../assets/robotron.png";
 import mochila from "../assets/mochila5.png";
 import aluraMidi from "../assets/AluraMidi.png";
+import java from "../assets/java.svg";
 
-export const site =[
+export const sites =[
 {
   titulo: 'Dogs',
   description:'Uma rede social com foco em cachorrinhos, aonde é possivel compartilhar as fotos de seus pets e ver as fotos de outros pets.',
@@ -66,5 +67,12 @@ export const site =[
   srcImg: robotron,
   srcImgFeatured: js,
   grupo: 'front'
-}
+},
+{
+  titulo: 'FinalProject',
+  description:'API Rest de produtos, feito em JAVA - SpringBoot.',
+  srcImg: robotron,
+  srcImgFeatured: java,
+  grupo: 'back'
+},
 ]
