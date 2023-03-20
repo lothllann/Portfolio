@@ -24,15 +24,15 @@
   width: 55vw;
   height: 372px;
   max-width: 850px;
-  padding: 50px 40px 50px 40px;
+  padding: 30px 40px 30px 40px;
 }
 
 .siteCard.mosaico{
   min-width: 150px ;
-  width: 30vw;
+  width: 33vw;
   height: 350px;
   max-width: 850px;
-  padding: 50px 40px 50px 40px;
+  padding: 30px 40px 30px 40px;
 }
 
 .siteCard.mosaico .imgSite{
