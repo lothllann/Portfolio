@@ -6,7 +6,7 @@ import Btn_Back from './Btn_Back'
 import Switch_Grid from './Switch_Grid'
 
 export const Front_End = () => {
-  const [grid, setGrid] = React.useState('mosaico')
+  const [grid, setGrid] = React.useState('single')
   return (
     <section className='container_Front'>
       <Btn_Back/>
