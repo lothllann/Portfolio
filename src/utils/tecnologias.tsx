@@ -11,6 +11,7 @@ import dayjs from "../assets/dayjs.png";
 import prisma from "../assets/prisma.png";
 import radixUi from "../assets/radix.png";
 import vite from "../assets/vite.png";
+import spring from "../assets/spring.svg";
 
 
 export const all = [
@@ -118,6 +119,14 @@ export const all = [
     socialMedia: "@vite_js",
     link: "https://vitejs.dev/",
     about: "Vite é uma ferramenta de compilação que visa fornecer uma experiência de desenvolvimento mais rápida e enxuta para projetos da Web modernos.",
+  },
+  {
+    name: "SpringBoot",
+    srcImg: spring,
+    recente: false,
+    socialMedia: "@springboot",
+    link: "https://spring.io/",
+    about: "Com Spring Boot em seu aplicativo, apenas algumas linhas de código são tudo o que você precisa para começar a criar serviços como um chefe.",
   },
 ];
 

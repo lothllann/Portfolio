@@ -10,11 +10,11 @@ export const Full_Stack = () => {
   const fullStack = sites.filter((site) => site.grupo == 'full')
   const [grid, setGrid] = React.useState("single");
   return (
-    <section className="container_Front">
+    <section className="container_Sites">
       <Btn_Back />
       <Switch_Grid gridState={grid} setGrid={setGrid} />
       <h1 className="text-4xl font-extrabold mb-[75px]">Full Stack</h1>
-      <main className={`mainFront-end ${grid}`}>
+      <main className={`mainSites ${grid}`}>
         {fullStack.map((i, index) => (
           <SiteCard
             key={index}

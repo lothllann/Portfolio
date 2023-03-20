@@ -8,15 +8,23 @@
   animation: show 0.5s ease-in forwards;
 }
 
-.container_Front{
+.container_Sites{
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
+  transform: translatey(-50px);
+  animation: show 0.5s ease-in forwards;
+  -webkit-animation: show 0.5s ease-in forwards;
+  -webkit-transform: translatey(-50px);
+  -moz-transform: translatey(-50px);
+  -ms-transform: translatey(-50px);
+  -o-transform: translatey(-50px);
 }
 
 
-.mainFront-end.single{
+.mainSites.single{
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -24,13 +32,12 @@ gap: 150px;
 }
 
 
-.mainFront-end.mosaico{
+.mainSites.mosaico{
 display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 75px;
 
 }
-
 
 .intro--portfolio {
   margin-top: 50px;

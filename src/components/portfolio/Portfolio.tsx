@@ -21,13 +21,16 @@ const Portfolio = ()=> {
       />
     <main className='mainPortfolio'>
       <section className='intro--portfolio'>
-      <Routes>
+       
+        <Routes>
         <Route path='/' element={<HomePortfolio/>}/>
         <Route path='front' element={<Front_End />}/>
         <Route path='back' element={<Back_End />}/>
         <Route path='fstack' element={<Full_Stack />}/>
         <Route path='mobile' element={<Mobile />}/>
       </Routes>
+
+
       </section>
 
     

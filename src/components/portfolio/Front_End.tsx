@@ -9,11 +9,11 @@ export const Front_End = () => {
   const [grid, setGrid] = React.useState("single");
   const front = sites.filter((site) => site.grupo == 'front')
   return (
-    <section className="container_Front">
+    <section className="container_Sites">
       <Btn_Back />
       <Switch_Grid gridState={grid} setGrid={setGrid} />
       <h1 className="text-4xl font-extrabold mb-[75px]">Front-End</h1>
-      <main className={`mainFront-end ${grid}`}>
+      <main className={`mainSites ${grid}`}>
         {front.map((i, index) => (
           <SiteCard
             key={index}

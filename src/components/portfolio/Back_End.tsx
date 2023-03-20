@@ -12,11 +12,11 @@ export const Back_End = () => {
 
   
   return (
-    <section className="container_Front">
+    <section className="container_Sites">
       <Btn_Back />
       <Switch_Grid gridState={grid} setGrid={setGrid} />
       <h1 className="text-4xl font-extrabold mb-[75px]">Back-End</h1>
-      <main className={`mainFront-end ${grid}`}>
+      <main className={`mainSites ${grid}`}>
         {back.map((i, index) => (
           <SiteCard
             key={index}
