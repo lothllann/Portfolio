@@ -15,7 +15,7 @@ const SiteCard = ({ srcImg, title, description, featured, grid }: Props) => {
       <div>
         <h1>{title}</h1>
         <p>{description}</p>
-        <button>Saiba Mais</button>
+        <button onClick={() => console.log('clicou')}>Saiba Mais</button>
       </div>
       <div className="languageSite">
         <img src={featured} alt="principal linguagem de programação do site" />
