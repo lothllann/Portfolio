@@ -17,7 +17,9 @@ module.exports = {
         blackGlass: 'rgba(0, 0, 0, 0.2)',
         greyGlass1:'rgba(255, 255, 255, 0.05)',
         greyGlass2: 'rgba(255, 255, 255, 0.07)',
-        greyGlass3: 'rgba(255, 255, 255, 0.1)'
+        greyGlass3: 'rgba(255, 255, 255, 0.1)',
+        greyGlass4: 'rgba(35, 35,35, 0.98)',
+
       },
       keyframes:{
         showUp:{

@@ -9,6 +9,7 @@ import Switch_Grid from "./Switch_Grid";
 export const Back_End = () => {
   const back = sites.filter((site) => site.grupo == 'back')
   const [grid, setGrid] = React.useState("single");
+  const [openModal, setOpenModal] = React.useState<boolean>(false)
 
   
   return (
@@ -25,6 +26,7 @@ export const Back_End = () => {
             srcImg={i.srcImg}
             featured={i.srcImgFeatured}
             grid={grid}
+            setOpenModal={setOpenModal}
           />
         ))}
       </main>
