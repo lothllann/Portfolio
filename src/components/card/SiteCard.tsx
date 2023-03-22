@@ -27,7 +27,7 @@ const SiteCard = ({ srcImg, title, description, featured, grid, tecs, langs, how
       <div className="languageSite">
         <img src={featured} alt="principal linguagem de programação do site" />
       </div>
-      <ModalCard setOpenModal={setOpenModal} isOpen={openModal} tecs={tecs} langs={langs} how={how}/>
+      <ModalCard setOpenModal={setOpenModal} isOpen={openModal} tecs={tecs} langs={langs} how={how} title={title}/>
     </div>
   );
 };
