@@ -16,7 +16,7 @@ const style = {
   fontSize: 35
 }
 const ModalCard = ({ isOpen, setOpenModal, how, tecs, langs, title }: ModalProps) => {
-  console.log(tecs)
+  all.filter()
 
  
   if (isOpen) return (
