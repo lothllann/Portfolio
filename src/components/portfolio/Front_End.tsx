@@ -2,14 +2,14 @@ import React from "react";
 import { sites } from "../../utils/sites";
 import SiteCard from "../card/SiteCard";
 import Footer from "../footer/Footer";
-import ModalCard from "../modalCard/ModalCard";
+
 import Btn_Back from "./Btn_Back";
 import Switch_Grid from "./Switch_Grid";
 
 export const Front_End = () => {
   const [grid, setGrid] = React.useState("single");
   const front = sites.filter((site) => site.grupo == 'front')
-  const [openModal, setOpenModal] = React.useState<boolean>(false)
+  
   return (
     <>
 
@@ -26,7 +26,9 @@ export const Front_End = () => {
             srcImg={i.srcImg}
             featured={i.srcImgFeatured}
             grid={grid}
-            setOpenModal={setOpenModal}
+            tecs={i.tecnologias}
+            langs={i.linguagens}
+            how={i.como_eu_fiz}
           />
         ))}
       </main>
@@ -34,7 +36,7 @@ export const Front_End = () => {
       <Footer />
      
     </section>
-    <ModalCard setOpenModal={setOpenModal} isOpen={openModal}/>
+    
     </>
   );
 };

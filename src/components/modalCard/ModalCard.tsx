@@ -5,6 +5,9 @@ import { grey } from "@mui/material/colors";
 interface ModalProps {
   isOpen: boolean;
   setOpenModal: Function
+  tecs: Array<string>;
+  langs: Array<string>;
+  how: string
 }
 const style = {
   color: grey,
@@ -17,6 +20,16 @@ const ModalCard = ({ isOpen, setOpenModal }: ModalProps) => {
       <button onClick={() => setOpenModal(false)} className="flex items-center justify-center w-[45px] h-[45px] absolute top-[-15px] right-[-15px] bg-[#323232] border-[1px] border-solid rounded-full border-greyGlass2 hover:bg-[#ff0000] hover:scale-110 transition-all">
       <CloseRoundedIcon style={style}/>
       </button>
+
+      <div>
+        <h2>Como eu fiz?</h2>
+        <div>
+          {}
+        </div>
+      </div>
+      <div>
+
+      </div>
     </div>
   </div>
   );

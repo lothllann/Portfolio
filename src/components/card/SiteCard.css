@@ -81,7 +81,7 @@
   -o-transform: scale(1.5) translatex(35px) translateY(-25px);
 }
 
-.siteCard button {
+.siteCard .btn_siteCard {
   position: absolute;
   bottom: 15px;
   right: 15px;
@@ -100,7 +100,7 @@
   -o-border-radius: 40px;
 }
 
-.siteCard button:before {
+.siteCard .btn_siteCard:before {
   content: '';
   position: absolute;
   top: 0;
@@ -110,7 +110,7 @@
   background: rgba(255, 255, 255, 0.05);
 }
 
-.siteCard button:hover {
+.siteCard .btn_siteCard:hover {
   background: #581c71;
 }
 
