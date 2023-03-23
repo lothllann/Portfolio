@@ -19,8 +19,8 @@ export const sites =[
   srcImgFeatured: react,
   grupo: 'front',
   como_eu_fiz: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.',
-  linguagens: ['CSS', 'HTML', 'JavaScript', 'TypeScript'],
-  tecnologias: ['React', 'Radix.Ui', 'Vite', 'Lottie'],
+  linguagens: ['CSS', 'HTML', 'JavaScript'],
+  tecnologias: ['React', 'Radix.Ui', 'Vite'],
 },
 {
   titulo: 'Netflix Clone',

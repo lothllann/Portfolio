@@ -17,6 +17,7 @@ import spring from "../assets/spring.svg";
 export const all = [
   {
     name: "React",
+    sites: ['Dogs', 'Netflix Clone'],
     srcImg: react,
     socialMedia: "@reactjs",
     about: "Uma biblioteca JavaScript para criar interfaces de usuário.",
@@ -25,6 +26,7 @@ export const all = [
   },
   {
     name: "React Native",
+    sites: [],
     srcImg: reactNative,
     recente: false,
     socialMedia: "@reactnative",
@@ -33,6 +35,7 @@ export const all = [
   },
   {
     name: "Lottie",
+    sites: [],
     srcImg: lottie,
     recente: true,
     link: "https://lottiefiles.com/",
@@ -41,6 +44,7 @@ export const all = [
   },
   {
     name: "TailWind",
+    sites: [],
     srcImg: tailWind,
     recente: true,
     link: "https://tailwindcss.com/",
@@ -49,6 +53,7 @@ export const all = [
   },
   {
     name: "PostCss",
+    sites: [],
     srcImg: postCss,
     recente: true,
     link: "https://postcss.org/",
@@ -57,6 +62,7 @@ export const all = [
   },
   {
     name: "Node.js",
+    sites: [],
     srcImg: node,
     recente: false,
     socialMedia: "@nodejs",
@@ -65,6 +71,7 @@ export const all = [
   },
   {
     name: "Phosphor",
+    sites: [],
     srcImg: phosphor,
     recente: true,
     link: "https://phosphoricons.com/",
@@ -73,6 +80,7 @@ export const all = [
   },
   {
     name: "Materials-Icon",
+    sites: [],
     srcImg: materialIcons,
     recente: true,
     link: "https://mui.com/material-ui/material-icons/",
@@ -81,6 +89,7 @@ export const all = [
   },
   {
     name: "Zod",
+    sites: [],
     srcImg: zod,
     recente: false,
     socialMedia: "@zod",
@@ -89,6 +98,7 @@ export const all = [
   },
   {
     name: "Prisma",
+    sites: [],
     srcImg: prisma,
     recente: false,
     socialMedia: "@prisma",
@@ -97,6 +107,7 @@ export const all = [
   },
   {
     name: "Radix.Ui",
+    sites: [],
     srcImg: radixUi,
     recente: true,
     socialMedia: "@radix_ui",
@@ -106,6 +117,7 @@ export const all = [
   },
   {
     name: "Day.js",
+    sites: [],
     srcImg: dayjs,
     recente: false,
     socialMedia: "@day_js",
@@ -114,6 +126,7 @@ export const all = [
   },
   {
     name: "Vite",
+    sites: [],
     srcImg: vite,
     recente: true,
     socialMedia: "@vite_js",
@@ -122,6 +135,7 @@ export const all = [
   },
   {
     name: "SpringBoot",
+    sites: [],
     srcImg: spring,
     recente: false,
     socialMedia: "@springboot",
