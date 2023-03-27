@@ -21,8 +21,7 @@ const ModalCard = ({ isOpen, setOpenModal, how, tecs, langs, title }: ModalProps
 
  
   if (isOpen) return (
-  <div className="fixed right-0 flex items-end justify-end w-[100%] h-[100vh] z-50">
-    <div className="p-[25px] relative w-[45%] h-[80%] flex-col backdrop-blur-sm bg-greyGlass4 border-greyGlass2 border-[1px] border-solid rounded-lg flex shadow-[0_5px_15px_rgba(0,0,0,0.2)]">
+    <div className="flex fixed right-[-100px] p-[25px]  w-[45%]  flex-col backdrop-blur-sm bg-greyGlass4 border-greyGlass2 border-[1px] border-solid rounded-lg  shadow-[0_5px_15px_rgba(0,0,0,0.2)]">
       <button onClick={() => setOpenModal(false)} className="flex items-center justify-center w-[45px] h-[45px] absolute top-[-15px] left-[-15px] bg-[#323232] border-[1px] border-solid rounded-full border-greyGlass2 hover:bg-[#ff0000] hover:scale-110 transition-all">
       <CloseRoundedIcon sx={{color: grey, fontSize: 35}}/>
       </button>
@@ -52,7 +51,7 @@ const ModalCard = ({ isOpen, setOpenModal, how, tecs, langs, title }: ModalProps
         </div>
       </div>
     </div>
-  </div>
+
   );
   else return null;
 };
