@@ -20,7 +20,7 @@ const Pizza = ({ data }: PizzaProps) => {
   }, [data]);
 
   return (
-    <div className="absolute right-0 top-0 w-[200px] h-[200px] ">
+    <div className="absolute right-0 top-0 w-[200px] h-[200px] cursor-grab">
       <VictoryPie
         data={graph}
         innerRadius={15}
