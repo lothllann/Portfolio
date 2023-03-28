@@ -15,7 +15,7 @@ export const Full_Stack = () => {
       <Switch_Grid gridState={grid} setGrid={setGrid} />
       <h1 className="text-4xl font-extrabold mb-[75px]">Full Stack</h1>
       <main className={`mainSites ${grid}`}>
-        {fullStack.map((i, index) => (
+        {/* {fullStack.map((i, index) => (
           <SiteCard
             key={index}
             description={i.description}
@@ -24,7 +24,7 @@ export const Full_Stack = () => {
             featured={i.srcImgFeatured}
             grid={grid}
           />
-        ))}
+        ))} */}
       </main>
 
       <Footer />

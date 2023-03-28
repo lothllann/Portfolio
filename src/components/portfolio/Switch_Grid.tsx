@@ -9,10 +9,6 @@ interface switchProps {
   setGrid: Function;
 }
 
-const style = {
-  fontSize: 30,
-  color: grey,
-};
 
 const Switch_Grid = ({ gridState, setGrid }: switchProps) => {
   const [iconGrid, setIconGrid] = React.useState<boolean>();
@@ -36,11 +32,11 @@ const Switch_Grid = ({ gridState, setGrid }: switchProps) => {
       </Switch.Root>
       {iconGrid ? (
         <div className="absolute right-[-35px] top-[-3px]">
-          <GridViewRoundedIcon style={style} />
+          <GridViewRoundedIcon sx={{ fontSize: 30, color: grey }} />
         </div>
       ) : (
         <div className="absolute right-[-35px] top-[-3px]">
-          <ViewDayRoundedIcon style={style} />
+          <ViewDayRoundedIcon sx={{ fontSize: 30, color: grey }} />
         </div>
       )}
     </div>

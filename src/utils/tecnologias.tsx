@@ -12,6 +12,7 @@ import prisma from "../assets/prisma.png";
 import radixUi from "../assets/radix.png";
 import vite from "../assets/vite.png";
 import spring from "../assets/spring.svg";
+import victory from "../assets/victory.svg";
 
 
 export const all = [
@@ -141,6 +142,15 @@ export const all = [
     socialMedia: "@springboot",
     link: "https://spring.io/",
     about: "Com Spring Boot em seu aplicativo, apenas algumas linhas de código são tudo o que você precisa para começar a criar serviços como um chefe.",
+  },
+  {
+    name: "Victory",
+    sites: ['Dogs'],
+    srcImg: victory,
+    recente: true,
+    socialMedia: "@victory",
+    link: "https://formidable.com/open-source/victory/",
+    about: "Victory é um conjunto de componentes de gráficos modulares para React e React Native. O Victory facilita o início sem sacrificar a flexibilidade.",
   },
 ];
 

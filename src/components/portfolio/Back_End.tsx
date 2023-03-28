@@ -18,7 +18,7 @@ export const Back_End = () => {
       <Switch_Grid gridState={grid} setGrid={setGrid} />
       <h1 className="text-4xl font-extrabold mb-[75px]">Back-End</h1>
       <main className={`mainSites ${grid}`}>
-        {back.map((i, index) => (
+        {/* {back.map((i, index) => (
           <SiteCard
             key={index}
             description={i.description}
@@ -28,7 +28,7 @@ export const Back_End = () => {
             grid={grid}
             setOpenModal={setOpenModal}
           />
-        ))}
+        ))} */}
       </main>
 
       <Footer />

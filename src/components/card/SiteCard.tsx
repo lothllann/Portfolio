@@ -9,7 +9,7 @@ interface Props {
   featured: string;
   grid: string;
   tecs: Array<string>;
-  langs: Array<string>;
+  langs: Array<Object>;
   how: string
 }
 
