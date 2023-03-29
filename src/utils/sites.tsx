@@ -26,7 +26,7 @@ export const sites = [
       { nome: "HTML", percent: 1.1 },
       { nome: "JavaScript", percent: 75.6 },
     ],
-    tecnologias: ["React", "Radix.Ui", "Vite", "Victory","Materials-Icon"],
+    tecnologias: ["React", "Radix.Ui", "Vite", "Victory"],
   },
   {
     titulo: "Netflix Clone",

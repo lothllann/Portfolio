@@ -37,10 +37,10 @@ const ModalCard = ({
           <CloseRoundedIcon sx={{ color: grey, fontSize: 35 }} />
         </button>
 
-        <Pizza data={langs} />
+        
 
         <div className="flex flex-1 items-center flex-col">
-          <h1 className="text-4xl font-extrabold mt-[25px] mb-[200px] ">{title}</h1>
+          <h1 className="text-4xl font-extrabold mt-[25px] mb-[100px] ">{title}</h1>
 
           <div className="w-[100%] mb-[100px]  flex gap-[15px]">
             <div className="w-[50%]">
@@ -48,10 +48,11 @@ const ModalCard = ({
                 Como eu fiz?
               </h2>
               {how}
+              <a href=""><button className="btn_siteCard">Veja voce mesmo</button></a>
             </div>
 
-            <div className="w-[50%] flex justify-center">
-              <div className="relative max-h-[500px] max-w-[400px]  bg-greyGlass4 p-[25px] gap-[15px] border-[1px] border-solid rounded-lg flex flex-wrap   shadow-[-5px_5px_15px_rgba(0,0,0,0.2)] border-greyGlass2 ">
+            <div className="w-[50%] flex flex-col items-center justify-center">
+              <div className="relative mb-[25px] max-h-[500px] max-w-[267px]  bg-greyGlass4 p-[25px] gap-[15px] border-[1px] border-solid rounded-lg flex flex-wrap flex-row shadow-[-5px_5px_15px_rgba(0,0,0,0.2)] border-greyGlass2 ">
                 {tecsFilter.map((tf, i) => (
                   <HoverCardElement
                     key={`${tf[0].name}*${i}`}
@@ -63,6 +64,7 @@ const ModalCard = ({
                   />
                 ))}
               </div>
+              <Pizza data={langs} />
             </div>
           </div>
         </div>
